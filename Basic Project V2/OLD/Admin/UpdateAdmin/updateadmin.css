@@ -1,0 +1,198 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+
+.menu {
+    text-transform: capitalize;
+    width: 25%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    position: relative;
+    width: 90%;
+    height: 95%;
+    list-style: none;
+    /* overflow: hidden; */
+}
+
+ul li a {
+    display: block;
+    width: 90%;
+    height: 70px;
+    margin: 10px 0;
+    margin-left: 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.profile {
+    margin: 20px 0;
+    width: 90%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 5px;
+}
+
+.profile .image {
+    width: 25%;
+    height: 100%;
+    margin: 15px 0;
+    margin-left: 20px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.profile p {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.admin a,
+li a:hover {
+    background-color: #EEE;
+    border-radius: 8px;
+}
+
+
+button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+}
+
+.button a {
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(152, 32, 32);
+}
+
+.two {
+    background-color: #EEE;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.nav {
+    height: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 20px;
+    /* margin: 10px 0; */
+}
+
+.nav p::first-line {
+    font-weight: bold;
+    font-size: 25px;
+    color: #00173D;
+}
+
+.nav .icons {
+    width: 12%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav .icons i {
+    font-size: 25px;
+    cursor: pointer;
+
+}
+
+.icons img {
+    width: 20px;
+    height: 20px;
+}
+
+.massage {
+    text-transform: capitalize;
+    width: 100%;
+    margin-left: 3%;
+    height: 15%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.massage p {
+    font-size: 30px;
+    color: #00173D;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.form {
+    height: 60%;
+    width: 80%;
+    margin-left: 3%;
+}
+
+label {
+    font-size: 20px;
+    color: #00173D;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+input {
+    margin: 20px 0;
+    border: transparent;
+    outline: transparent;
+    background-color: #D9D9D9;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    padding: 20px;
+    font-weight: 300;
+}
+
+.button {
+    width: 14%;
+    height: 30px;
+    background-color: #2CC669;
+    color: white;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-weight: bold;
+}

@@ -1,0 +1,116 @@
+.form {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  height: 80%;
+  padding-top: 10px;
+  margin-left: 2.5%;
+}
+
+.form form {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form form label {
+  color: #00173d;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.form form input,
+.form form select {
+  width: 100%;
+  height: 8%;
+  background-color: #d9d9d96e;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  color: #000000;
+  padding: 0 10px;
+  text-transform: none;
+}
+
+.form form .min {
+  width: 35%;
+}
+
+.form form select option {
+  color: #000;
+}
+
+.code {
+  width: 80%;
+  height: 8%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.code .codeinput {
+  width: 88%;
+  height: 100%;
+}
+
+.code div {
+  width: 12%;
+  height: 100%;
+}
+
+.code div .generatecode {
+  cursor: pointer;
+  font-size: 15px;
+  width: 100%;
+  height: 100%;
+  background-color: #4281ed;
+  border-radius: 8px;
+  border: none;
+}
+
+.inputfile {
+  padding: 0;
+  position: relative;
+}
+
+input[type="file"]::file-selector-button {
+  width: 20%;
+  height: 100%;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.form form .subbutton {
+  background-color: #4281ed;
+  color: #ffffff;
+  font-size: 18px;
+  width: 20%;
+  height: 7.8%;
+  cursor: pointer;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  font-weight: bold;
+  margin-top: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form .form2 {
+  width: 30%;
+}
+
+.form .form2 input {
+  width: 20%;
+}
+
+.form form .description {
+  height: 250px;
+}

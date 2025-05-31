@@ -1,0 +1,13 @@
+.prev {
+    text-align: right;
+}
+
+.next {
+    text-align: left;
+}
+
+/* Adjust button width for table */
+td .button {
+    width: 120px;
+    height: 35px;
+}

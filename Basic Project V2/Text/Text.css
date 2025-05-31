@@ -1,0 +1,11 @@
+.main .text {
+  margin: 20px 0;
+  font-size: 30px;
+  color: #00173d;
+  font-weight: bold;
+}
+
+.main .text p {
+  color: #00173d;
+  font-weight: bold;
+}

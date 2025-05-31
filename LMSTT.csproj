@@ -1,0 +1,64 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="9.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Web.LibraryManager.Build" Version="3.0.71" />
+    <PackageReference Include="OpenAI" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\assests\images\courses\" />
+    <Folder Include="wwwroot\css\TeacherFile\TeacherQuiz\TeacherQuizView\" />
+    <Folder Include="wwwroot\Materials\" />
+    <Folder Include="wwwroot\Tasks\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\Button2\Button2.css" />
+    <None Include="wwwroot\css\CourseMaterial\CourseMaterial.css" />
+    <None Include="wwwroot\css\Form\Form.css" />
+    <None Include="wwwroot\css\StudentFile\Course\QuizzesCourse\answer.html" />
+    <None Include="wwwroot\css\StudentFile\Course\QuizzesCourse\ccnaquiz.css" />
+    <None Include="wwwroot\css\StudentFile\Course\QuizzesCourse\ccnaquiz.html" />
+    <None Include="wwwroot\css\StudentFile\Course\QuizzesCourse\endquiz.html" />
+    <None Include="wwwroot\css\StudentFile\Course\QuizzesCourse\lastQuestion.html" />
+    <None Include="wwwroot\css\StudentFile\Course\QuizzesCourse\LastviewQuestions.html" />
+    <None Include="wwwroot\css\StudentFile\Course\QuizzesCourse\Quizzes.html" />
+    <None Include="wwwroot\css\StudentFile\Course\QuizzesCourse\ViewQuestion.html" />
+    <None Include="wwwroot\css\StudentFile\Course\Tasks\submitTask.css" />
+    <None Include="wwwroot\css\StudentFile\Course\Tasks\submitTask.html" />
+    <None Include="wwwroot\css\StudentFile\Course\Tasks\Tasks.html" />
+    <None Include="wwwroot\css\StudentFile\Course\Tasks\ViewSubmissionTask.html" />
+    <None Include="wwwroot\css\Table2\Table2.css" />
+    <None Include="wwwroot\css\TeacherFile\TeacherCourses\AddCourse\AddCourse.css" />
+    <None Include="wwwroot\css\TeacherFile\TeacherCourses\ArchivedCourses\Archived.css" />
+    <None Include="wwwroot\css\TeacherFile\TeacherCourses\CourseMaterial\CourseMaterial.css" />
+    <None Include="wwwroot\css\TeacherFile\TeacherCourses\CourseStudent\CourseStudent.css" />
+    <None Include="wwwroot\css\StudentFile\Course\ViewCourse\Courses.css" />
+    <None Include="wwwroot\css\TeacherFile\TeacherCourses\SubjectCourse\SubjectCourse.css" />
+    <None Include="wwwroot\css\TeacherFile\TeacherCourses\UpdateCourse\UpdateCourse.css" />
+    <None Include="wwwroot\css\TeacherFile\TeacherCourses\UpdateMaterial\UpdateMaterial.css" />
+    <None Include="wwwroot\css\TeacherFile\TeacherCourses\UploadMaterial\UploadMaterial.css" />
+    <None Include="wwwroot\css\TeacherFile\TeacherQuiz\AddQuestion\AddQuestion.html" />
+    <None Include="wwwroot\css\TeacherFile\TeacherQuiz\AddQuiz\AddQuiz.html" />
+    <None Include="wwwroot\css\TeacherFile\TeacherQuiz\EditQuiz\EditQuiz.html" />
+    <None Include="wwwroot\css\TeacherFile\TeacherQuiz\LastQuestion\LastQuestion.html" />
+    <None Include="wwwroot\css\TeacherFile\TeacherStudents\Students.css" />
+    <None Include="wwwroot\css\TeacherFile\TeacherTasks\AddTask\AddTask.html" />
+    <None Include="wwwroot\css\TeacherFile\TeacherTasks\EditTask\EditTask.html" />
+    <None Include="wwwroot\css\TeacherFile\TeacherTasks\TeacherTasksView.html\TeacherTaskView.html" />
+  </ItemGroup>
+
+</Project>

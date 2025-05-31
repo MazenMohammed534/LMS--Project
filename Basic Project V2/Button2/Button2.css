@@ -1,0 +1,53 @@
+.button {
+  width: 20%;
+  height: 6%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.button button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #4281ed;
+  cursor: pointer;
+}
+
+.button button a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-decoration: none;
+}
+
+.endbuttons {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  height: 10%;
+}
+
+.endbuttons .button {
+  width: 10%;
+  height: 50%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.endbuttons .button button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #4281ed;
+  cursor: pointer;
+}
+.endbuttons .button button a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-decoration: none;
+}

@@ -1,0 +1,179 @@
+.main .boxcontainer {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    /* flex-wrap: wrap; */
+    align-items: flex-start;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+    .main .boxcontainer .box {
+        background-color: rgba(217, 217, 217, 40%);
+        width: 80%;
+        height: 11.5%;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        padding: 0 20px;
+        justify-content: space-between;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        flex-shrink: 0;
+    }
+
+        .main .boxcontainer .box .firstdiv {
+            width: 80%;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+            .main .boxcontainer .box .firstdiv .firsticon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 10%;
+                height: 10%;
+            }
+
+                .main .boxcontainer .box .firstdiv .firsticon i {
+                    color: #000;
+                }
+
+            .main .boxcontainer .box .firstdiv .lecturename p {
+                color: #000;
+                font-weight: bold;
+            }
+
+        .main .boxcontainer .box .exten {
+            width: 100px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+            .main .boxcontainer .box .exten .edit i {
+                cursor: pointer;
+                color: #000;
+            }
+
+            .main .boxcontainer .box .exten .delete i {
+                color: #000;
+                cursor: pointer;
+            }
+
+            .main .boxcontainer .box .exten div {
+                width: 100%;
+                height: 100%;
+            }
+
+                .main .boxcontainer .box .exten div a{
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    background-color: #4281ed;
+                    color: #fff;
+                    border-radius: 8px;
+                    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+                    cursor: pointer;
+                    text-decoration:none;
+                    padding:5px;
+                }
+
+                .main .boxcontainer .box .exten div button {
+                    width: 50%;
+                    height: 100%;
+                    border: none;
+                    background-color: #4281ed;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    padding: 5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .main .boxcontainer .box .exten div button i {
+                    width: 100%;
+                    height: 100%;
+                    background-color: #4281ed;
+                    color: #fff;
+                    border-radius: 8px;
+                    padding: 5px;
+                }
+
+
+                    .main .boxcontainer .box .exten div form {
+                       display:flex;
+                       justify-content:flex-end;
+                       align-items:center;
+                    }
+
+.form {
+    /* background-color: #00173d; */
+    height: 12%;
+    width: 100%;
+    margin-bottom:25px;
+}
+
+    .form form {
+        /* background-color: #4281ed;/ */
+        width: 100%;
+        height: 100%;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+    }
+
+    .form .file {
+        /* background-color: aqua; */
+        position: relative;
+        width: 50%;
+        height: 50%;
+    }
+
+    .form form input {
+        width: 90%;
+        height: 100%;
+        background-color: #eee;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        color: #000000;
+        text-transform: none;
+    }
+
+input[type="file"]::file-selector-button {
+    width: 20%;
+    height: 100%;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor:pointer;
+}
+
+.upload {
+    width: 90%;
+    height: 50%;
+}
+
+    .upload button {
+        background-color: #4281ed;
+        width: 10%;
+        height: 100%;
+        border-radius: 8px;
+        color: black;
+        padding: 0 10px;
+        border: none;
+        cursor: pointer;
+        color: #fff;
+    }
+  

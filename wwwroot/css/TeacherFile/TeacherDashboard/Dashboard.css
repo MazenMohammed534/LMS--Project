@@ -1,0 +1,98 @@
+.Dashboard a {
+    background-color: #4281ed;
+}
+
+.boxinfo {
+    width: 100%;
+    height: 40%;
+    /* background-color: bisque; */
+    padding-top: 50px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: nowrap;
+    margin-top: 1%;
+}
+
+    .boxinfo .box {
+        background-color: #ffffff;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 2%;
+        background-color: #ffffff;
+        width: 20%;
+        height: 60%;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    }
+
+.box .num {
+    padding: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+    .box .num p {
+        text-transform: capitalize;
+        color: #000000;
+        font-weight: bold;
+    }
+
+    .box .num span {
+        font-weight: bold;
+        color: #000000;
+    }
+
+.box .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .box .icon svg {
+        width: 70%;
+        height: 70%;
+    }
+
+.box .blue {
+    background-color: #4361ee;
+}
+
+.box .bpink {
+    background-color: #7209b7;
+}
+
+.box .orange {
+    background-color: #fb8500;
+}
+
+.box .pink {
+    background-color: #f72585;
+}
+
+.details {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cont {
+    background-color: #1b2233;
+    width: 40%;
+    height: 30%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}

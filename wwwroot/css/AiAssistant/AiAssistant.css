@@ -1,0 +1,331 @@
+.ai a {
+    background-color: #4281ed;
+}
+
+.two {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.head img {
+    width: 40px;
+    height: 40px;
+}
+
+.head p {
+    color: #00173d;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.main .mainbox {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 180px);
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.main .mainbox .mymessage {
+    background-color: #4281ed;
+    color: white;
+    padding: 16px 20px;
+    margin-left: auto;
+    max-width: 70%;
+    border-radius: 15px 15px 0 15px;
+    font-size: 16px;
+    line-height: 1.5;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.main .mainbox .airepaly {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.main .mainbox .airepaly .replaystart {
+    width: 70%;
+    background-color: #f8f9fa;
+    padding: 16px 20px;
+    border-radius: 15px 15px 15px 0;
+    color: #2c3e50;
+    font-size: 16px;
+    line-height: 1.5;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.main .mainbox .airepaly .solution {
+    width: 70%;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.main .mainbox .airepaly .solution .solutionnav {
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2c3e50;
+}
+
+.main .mainbox .airepaly .solution .solutionnav .navtext {
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.main .mainbox .airepaly .solution .solutionnav .navexten {
+    display: flex;
+    gap: 10px;
+}
+
+.main .mainbox .airepaly .solution .solutionnav .navexten .exten button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    border: none;
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.main .mainbox .airepaly .solution .solutionnav .navexten .exten button:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+.main .mainbox .airepaly .solution .solutionnav .navexten .exten button i {
+    font-size: 14px;
+    color: white;
+}
+
+.main .mainbox .airepaly .solution .solutionnav .navexten .exten button p {
+    font-size: 14px;
+    color: white;
+}
+
+.main .mainbox .airepaly .solution .mainsolution {
+    padding: 20px;
+    background-color: #1e293b;
+    color: #e2e8f0;
+    font-family: 'Fira Code', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    overflow-x: auto;
+}
+
+.main .mainbox .airepaly .solution .mainsolution pre {
+    margin: 0;
+    white-space: pre-wrap;
+}
+
+.main .mainbox .airepaly .solution .mainsolution code {
+    font-family: 'Fira Code', monospace;
+}
+
+.promptbox {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px);
+    max-width: 1000px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 30px;
+    padding: 0 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border: 1px solid #e2e8f0;
+}
+
+.promptbox input {
+    flex: 1;
+    height: 100%;
+    padding: 0 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #2c3e50;
+    background: transparent;
+}
+
+.promptbox input::placeholder {
+    color: #94a3b8;
+}
+
+.promptbox .send {
+    padding: 0 10px;
+}
+
+.promptbox .send button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #4281ed;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.promptbox .send button:hover {
+    background-color: #2563eb;
+    transform: scale(1.05);
+}
+
+.promptbox .send button i {
+    font-size: 18px;
+    color: white;
+}
+
+/* Disabled state */
+.promptbox input:disabled,
+.promptbox .send button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* Loading indicator */
+.loading {
+    position: relative;
+}
+
+.loading::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #4281ed;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Scrollbar */
+.main .mainbox::-webkit-scrollbar {
+    width: 8px;
+}
+
+.main .mainbox::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.main .mainbox::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+.main .mainbox::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* Error message */
+.error-message {
+    background-color: #fee2e2;
+    color: #dc2626;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin: 10px 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.error-message i {
+    font-size: 16px;
+}
+
+/* Success message */
+.success-message {
+    background-color: #dcfce7;
+    color: #16a34a;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin: 10px 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.success-message i {
+    font-size: 16px;
+}
+
+/* Syntax highlighting for code */
+.token.comment { color: #8b9eb0; }
+.token.string { color: #98c379; }
+.token.number { color: #d19a66; }
+.token.keyword { color: #c678dd; }
+.token.function { color: #61afef; }
+.token.operator { color: #56b6c2; }
+
+/* Scrollbar styling */
+.main .mainbox::-webkit-scrollbar {
+    width: 8px;
+}
+
+.main .mainbox::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.main .mainbox::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+.main .mainbox::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+} 

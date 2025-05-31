@@ -1,0 +1,227 @@
+@model LMSTT.ViewModels.Quiz.CreateQuizViewModel
+@{
+    ViewData["Title"] = "Create Quiz";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Quiz</title>
+    <link rel="stylesheet" href="~/css/Menu/Menu&Two.css" />
+    <link rel="stylesheet" href="~/css/Form/Form.css" />
+    <link rel="stylesheet" href="~/css/Button2/Button2.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <style>
+        .nav {
+            justify-content: flex-end;
+        }
+
+        .quizzes a {
+            background-color: #4281ed;
+        }
+
+        .main .text {
+            font-size: 30px;
+            color: #00173d;
+            font-weight: bold;
+        }
+
+        .text-danger {
+            color: #dc3545;
+            font-size: 14px;
+            margin-top: 5px;
+            display: block;
+        }
+
+        .button button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4281ed;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .button button:hover {
+            background-color: #2d5bb9;
+        }
+
+        .button button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .progress {
+            height: 100%;
+            background-color: #4281ed;
+            transition: width 0.3s ease;
+        }
+
+        .step-info {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #00173d;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized")
+        {window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}
+        window.chatbase.q.push(arguments)};
+        window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q")
+        {return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function()
+        {const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";
+        script.id="qxHZg6Ehg3MfGMjhJT7nJ";script.domain="www.chatbase.co";document.body.appendChild(script)};
+        if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li class="image">
+                    <div class="forimage">
+                        <img src="~/css/Images/BOOKLOGO-Photoroom.png" alt="Logo" />
+                        <p class="text">campus</p>
+                    </div>
+                </li>
+                <div class="line"></div>
+                <li class="Dashboard">
+                    <a href="@Url.Action("TeacherDashboard", "Teacher")">
+                        <i class="fa fa-address-card"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <li class="students">
+                    <a href="@Url.Action("Students", "Teacher")">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <p>students</p>
+                    </a>
+                </li>
+                <li class="courses">
+                    <a href="@Url.Action("Courses", "Teacher")">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <p>courses</p>
+                    </a>
+                </li>
+                <li class="quizzes">
+                    <a href="@Url.Action("TeacherQuizzesView", "Quiz")">
+                        <i class="fa-solid fa-book-open"></i>
+                        <p>quizzes</p>
+                    </a>
+                </li>
+                <li class="tasks">
+                    <a href="@Url.Action("TeacherAssignments", "Assignment")">
+                        <i class="fa-solid fa-list-check"></i>
+                        <p>Tasks</p>
+                    </a>
+                </li>
+                <div class="line bottom"></div>
+                <li class="personinfo">
+                    <div class="personimg">
+                        <img src="~/css/Images/profilephoto.jpg" alt="Profile" />
+                    </div>
+                    <div class="name">
+                        <p>@User.Identity.Name</p>
+                        <span>Teacher</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--MENU -->
+        <div class="two">
+            <div class="main">
+                <div class="nav">
+                    <div class="buttons">
+                        <button onclick="location.href='@Url.Action("Logout", "Account")'">
+                            <i class="fa fa-sign-out"></i>
+                        </button>
+                        <button>
+                            <i class="fa-regular fa-bell"></i>
+                        </button>
+                        <button>
+                            <i class="fa-regular fa-message"></i>
+                        </button>
+                    </div>
+                    <!--ICONS-->
+                </div>
+                <!--NAV-->
+                <div class="text">Create Quiz</div>
+
+                <div class="form">
+                    <form method="post" asp-controller="Quiz" asp-action="Create">
+                        @Html.AntiForgeryToken()
+
+                        <label asp-for="CourseId">Select Course</label>
+                        <select asp-for="CourseId" asp-items="Model.CoursesList">
+                            <option value="">Select a course</option>
+                        </select>
+                        <span asp-validation-for="CourseId" class="text-danger"></span>
+
+                        <label asp-for="Title">Title</label>
+                        <input asp-for="Title" />
+                        <span asp-validation-for="Title" class="text-danger"></span>
+
+                        <label asp-for="QuestionsNumber">Questions Number</label>
+                        <input asp-for="QuestionsNumber" type="number" min="1" max="100" />
+                        <span asp-validation-for="QuestionsNumber" class="text-danger"></span>
+
+                        <label asp-for="DueDate">Due Date</label>
+                        <input asp-for="DueDate" type="date" />
+                        <span asp-validation-for="DueDate" class="text-danger"></span>
+
+                        <label asp-for="TimeLimit">Time Limit</label>
+                        <input asp-for="TimeLimit" type="time" />
+                        <span asp-validation-for="TimeLimit" class="text-danger"></span>
+
+                        <label asp-for="Status">Status</label>
+                        <select asp-for="Status" asp-items="Model.StatusList">
+                            <option value="">Select status</option>
+                        </select>
+                        <span asp-validation-for="Status" class="text-danger"></span>
+
+                        <button type="submit" class="subbutton">Create Quiz</button>
+                    </form>
+                </div>
+            </div>
+            <!-- MAIN -->
+        </div>
+        <!--TWO-->
+    </div>
+    <!--Container-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var today = new Date().toISOString().split('T')[0];
+            $('input[type="date"]').attr('min', today);
+        });
+
+        function goToAddQuestions() {
+            var questionsNumber = document.getElementById('QuestionsNumber').value;
+            if (questionsNumber && questionsNumber > 0) {
+                window.location.href = '@Url.Action("AddQuestion", "Quiz")?questionNumber=1&totalQuestions=' + questionsNumber;
+            } else {
+                alert('Please enter a valid number of questions first.');
+            }
+        }
+    </script>
+</body>
+</html> 

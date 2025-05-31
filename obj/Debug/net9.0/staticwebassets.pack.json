@@ -1,0 +1,609 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\LMSTT.bundle.scp.css",
+      "PackagePath": "staticwebassets\\LMSTT.p17owht2ii.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\Materials\\0aehbvyx.rk4",
+      "PackagePath": "staticwebassets\\Materials\\0aehbvyx.rk4"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\Materials\\10cozaav.4gs",
+      "PackagePath": "staticwebassets\\Materials\\10cozaav.4gs"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\Materials\\k0nefkke.mum",
+      "PackagePath": "staticwebassets\\Materials\\k0nefkke.mum"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\Materials\\tjp3jhdx.nx4",
+      "PackagePath": "staticwebassets\\Materials\\tjp3jhdx.nx4"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\Materials\\tznm0qbx.52o",
+      "PackagePath": "staticwebassets\\Materials\\tznm0qbx.52o"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\Materials\\ukv4f4jr.fy4",
+      "PackagePath": "staticwebassets\\Materials\\ukv4f4jr.fy4"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\Materials\\xxyl3n4h.2ad",
+      "PackagePath": "staticwebassets\\Materials\\xxyl3n4h.2ad"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\assests\\images\\courses\\c88de1bd-b1b1-4165-a4d5-3be2b558c363.jpeg",
+      "PackagePath": "staticwebassets\\assests\\images\\courses\\c88de1bd-b1b1-4165-a4d5-3be2b558c363.jpeg"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\assests\\images\\courses\\ccna.jpeg",
+      "PackagePath": "staticwebassets\\assests\\images\\courses\\ccna.jpeg"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\assests\\images\\courses\\database.jpeg",
+      "PackagePath": "staticwebassets\\assests\\images\\courses\\database.jpeg"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\assests\\images\\courses\\default-course-cover.jpg",
+      "PackagePath": "staticwebassets\\assests\\images\\courses\\default-course-cover.jpg"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\assests\\images\\courses\\webdev.jpeg",
+      "PackagePath": "staticwebassets\\assests\\images\\courses\\webdev.jpeg"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\AdminFile\\AdminCourse\\ViewCourse\\ViewCourse.css",
+      "PackagePath": "staticwebassets\\css\\AdminFile\\AdminCourse\\ViewCourse\\ViewCourse.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\AdminFile\\AdminDashboard\\Dashboard.css",
+      "PackagePath": "staticwebassets\\css\\AdminFile\\AdminDashboard\\Dashboard.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\AdminFile\\AdminDepartment\\AddDepartment.css",
+      "PackagePath": "staticwebassets\\css\\AdminFile\\AdminDepartment\\AddDepartment.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\AdminFile\\AdminDepartment\\ViewDepartments.css",
+      "PackagePath": "staticwebassets\\css\\AdminFile\\AdminDepartment\\ViewDepartments.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\AdminFile\\AdminStudent\\AddStudent\\AddStudent.css",
+      "PackagePath": "staticwebassets\\css\\AdminFile\\AdminStudent\\AddStudent\\AddStudent.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\AdminFile\\AdminStudent\\UpdateStudent\\UpdateStudent.css",
+      "PackagePath": "staticwebassets\\css\\AdminFile\\AdminStudent\\UpdateStudent\\UpdateStudent.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\AdminFile\\AdminStudent\\ViewStudent\\ViewStudent.css",
+      "PackagePath": "staticwebassets\\css\\AdminFile\\AdminStudent\\ViewStudent\\ViewStudent.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\AdminFile\\AdminTeacher\\AddTeacher\\AddTeacher.css",
+      "PackagePath": "staticwebassets\\css\\AdminFile\\AdminTeacher\\AddTeacher\\AddTeacher.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\AdminFile\\AdminTeacher\\TeacherView\\Teacher.css",
+      "PackagePath": "staticwebassets\\css\\AdminFile\\AdminTeacher\\TeacherView\\Teacher.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\AdminFile\\AdminTeacher\\UpdateTeacher\\UpdateTeacher.css",
+      "PackagePath": "staticwebassets\\css\\AdminFile\\AdminTeacher\\UpdateTeacher\\UpdateTeacher.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\AdminFile\\Admin\\AddAdmin\\AddAdmin.css",
+      "PackagePath": "staticwebassets\\css\\AdminFile\\Admin\\AddAdmin\\AddAdmin.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\AdminFile\\Admin\\AdminView\\Admin.css",
+      "PackagePath": "staticwebassets\\css\\AdminFile\\Admin\\AdminView\\Admin.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\AdminFile\\Admin\\UpdateAdmin\\UpdateAdmin.css",
+      "PackagePath": "staticwebassets\\css\\AdminFile\\Admin\\UpdateAdmin\\UpdateAdmin.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\Button2\\Button2.css",
+      "PackagePath": "staticwebassets\\css\\Button2\\Button2.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\Button\\Button.css",
+      "PackagePath": "staticwebassets\\css\\Button\\Button.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\CourseMaterial\\CourseMaterial.css",
+      "PackagePath": "staticwebassets\\css\\CourseMaterial\\CourseMaterial.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\Form\\Form.css",
+      "PackagePath": "staticwebassets\\css\\Form\\Form.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\Images\\BOOKLOGO-Photoroom.png",
+      "PackagePath": "staticwebassets\\css\\Images\\BOOKLOGO-Photoroom.png"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\Images\\BOOKLOGO.png",
+      "PackagePath": "staticwebassets\\css\\Images\\BOOKLOGO.png"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\Images\\Ballon d_Or.jpg",
+      "PackagePath": "staticwebassets\\css\\Images\\Ballon d_Or.jpg"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\Images\\Logo.jpg",
+      "PackagePath": "staticwebassets\\css\\Images\\Logo.jpg"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\Images\\Screenshot 2025-03-28 143411.png",
+      "PackagePath": "staticwebassets\\css\\Images\\Screenshot 2025-03-28 143411.png"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\Images\\WhatsApp Image 2025-03-13 at 23.58.52_85a0892f.jpg",
+      "PackagePath": "staticwebassets\\css\\Images\\WhatsApp Image 2025-03-13 at 23.58.52_85a0892f.jpg"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\Images\\WhatsApp Image 2025-03-13 at 23.58.52_8d6385b4.jpg",
+      "PackagePath": "staticwebassets\\css\\Images\\WhatsApp Image 2025-03-13 at 23.58.52_8d6385b4.jpg"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\Images\\WhatsApp Image 2025-03-27 at 23.55.37_4cf19f39.jpg",
+      "PackagePath": "staticwebassets\\css\\Images\\WhatsApp Image 2025-03-27 at 23.55.37_4cf19f39.jpg"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\Images\\WhatsApp Image 2025-04-30 at 01.07.19_2a05739a.jpg",
+      "PackagePath": "staticwebassets\\css\\Images\\WhatsApp Image 2025-04-30 at 01.07.19_2a05739a.jpg"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\Images\\WhatsApp Image 2025-04-30 at 01.07.19_99f11244.jpg",
+      "PackagePath": "staticwebassets\\css\\Images\\WhatsApp Image 2025-04-30 at 01.07.19_99f11244.jpg"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\Images\\profilephoto.jpg",
+      "PackagePath": "staticwebassets\\css\\Images\\profilephoto.jpg"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\Login&Register\\Register.css",
+      "PackagePath": "staticwebassets\\css\\Login&Register\\Register.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\Login&Register\\login.css",
+      "PackagePath": "staticwebassets\\css\\Login&Register\\login.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\Menu\\Menu&Two.css",
+      "PackagePath": "staticwebassets\\css\\Menu\\Menu&Two.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\StudentFile\\Course\\ArchivedCourse\\ArchivedCourse.html",
+      "PackagePath": "staticwebassets\\css\\StudentFile\\Course\\ArchivedCourse\\ArchivedCourse.html"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\StudentFile\\Course\\CourseMaterial\\CourseMaterial.html",
+      "PackagePath": "staticwebassets\\css\\StudentFile\\Course\\CourseMaterial\\CourseMaterial.html"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\StudentFile\\Course\\QuizzesCourse\\LastviewQuestions.html",
+      "PackagePath": "staticwebassets\\css\\StudentFile\\Course\\QuizzesCourse\\LastviewQuestions.html"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\StudentFile\\Course\\QuizzesCourse\\Quizzes.html",
+      "PackagePath": "staticwebassets\\css\\StudentFile\\Course\\QuizzesCourse\\Quizzes.html"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\StudentFile\\Course\\QuizzesCourse\\ViewQuestion.html",
+      "PackagePath": "staticwebassets\\css\\StudentFile\\Course\\QuizzesCourse\\ViewQuestion.html"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\StudentFile\\Course\\QuizzesCourse\\answer.html",
+      "PackagePath": "staticwebassets\\css\\StudentFile\\Course\\QuizzesCourse\\answer.html"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\StudentFile\\Course\\QuizzesCourse\\ccnaquiz.css",
+      "PackagePath": "staticwebassets\\css\\StudentFile\\Course\\QuizzesCourse\\ccnaquiz.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\StudentFile\\Course\\QuizzesCourse\\ccnaquiz.html",
+      "PackagePath": "staticwebassets\\css\\StudentFile\\Course\\QuizzesCourse\\ccnaquiz.html"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\StudentFile\\Course\\QuizzesCourse\\endquiz.html",
+      "PackagePath": "staticwebassets\\css\\StudentFile\\Course\\QuizzesCourse\\endquiz.html"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\StudentFile\\Course\\QuizzesCourse\\lastQuestion.html",
+      "PackagePath": "staticwebassets\\css\\StudentFile\\Course\\QuizzesCourse\\lastQuestion.html"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\StudentFile\\Course\\SubjectCourse\\SubjectCourse.css",
+      "PackagePath": "staticwebassets\\css\\StudentFile\\Course\\SubjectCourse\\SubjectCourse.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\StudentFile\\Course\\SubjectCourse\\SubjectCourse.html",
+      "PackagePath": "staticwebassets\\css\\StudentFile\\Course\\SubjectCourse\\SubjectCourse.html"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\StudentFile\\Course\\Tasks\\Tasks.html",
+      "PackagePath": "staticwebassets\\css\\StudentFile\\Course\\Tasks\\Tasks.html"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\StudentFile\\Course\\Tasks\\ViewSubmissionTask.html",
+      "PackagePath": "staticwebassets\\css\\StudentFile\\Course\\Tasks\\ViewSubmissionTask.html"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\StudentFile\\Course\\Tasks\\submitTask.css",
+      "PackagePath": "staticwebassets\\css\\StudentFile\\Course\\Tasks\\submitTask.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\StudentFile\\Course\\Tasks\\submitTask.html",
+      "PackagePath": "staticwebassets\\css\\StudentFile\\Course\\Tasks\\submitTask.html"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\StudentFile\\Course\\ViewCourse\\Courses.css",
+      "PackagePath": "staticwebassets\\css\\StudentFile\\Course\\ViewCourse\\Courses.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\StudentFile\\Dashboard\\Dashboard.css",
+      "PackagePath": "staticwebassets\\css\\StudentFile\\Dashboard\\Dashboard.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\Table2\\Table2.css",
+      "PackagePath": "staticwebassets\\css\\Table2\\Table2.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\Table\\Table.css",
+      "PackagePath": "staticwebassets\\css\\Table\\Table.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\TeacherFile\\TeacherCourses\\AddCourse\\AddCourse.css",
+      "PackagePath": "staticwebassets\\css\\TeacherFile\\TeacherCourses\\AddCourse\\AddCourse.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\TeacherFile\\TeacherCourses\\ArchivedCourses\\Archived.css",
+      "PackagePath": "staticwebassets\\css\\TeacherFile\\TeacherCourses\\ArchivedCourses\\Archived.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\TeacherFile\\TeacherCourses\\CourseMaterial\\CourseMaterial.css",
+      "PackagePath": "staticwebassets\\css\\TeacherFile\\TeacherCourses\\CourseMaterial\\CourseMaterial.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\TeacherFile\\TeacherCourses\\CourseStudent\\CourseStudent.css",
+      "PackagePath": "staticwebassets\\css\\TeacherFile\\TeacherCourses\\CourseStudent\\CourseStudent.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\TeacherFile\\TeacherCourses\\Courses\\Courses.css",
+      "PackagePath": "staticwebassets\\css\\TeacherFile\\TeacherCourses\\Courses\\Courses.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\TeacherFile\\TeacherCourses\\SubjectCourse\\SubjectCourse.css",
+      "PackagePath": "staticwebassets\\css\\TeacherFile\\TeacherCourses\\SubjectCourse\\SubjectCourse.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\TeacherFile\\TeacherCourses\\UpdateCourse\\UpdateCourse.css",
+      "PackagePath": "staticwebassets\\css\\TeacherFile\\TeacherCourses\\UpdateCourse\\UpdateCourse.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\TeacherFile\\TeacherCourses\\UpdateMaterial\\UpdateMaterial.css",
+      "PackagePath": "staticwebassets\\css\\TeacherFile\\TeacherCourses\\UpdateMaterial\\UpdateMaterial.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\TeacherFile\\TeacherCourses\\UploadMaterial\\UploadMaterial.css",
+      "PackagePath": "staticwebassets\\css\\TeacherFile\\TeacherCourses\\UploadMaterial\\UploadMaterial.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\TeacherFile\\TeacherDashboard\\Dashboard.css",
+      "PackagePath": "staticwebassets\\css\\TeacherFile\\TeacherDashboard\\Dashboard.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\TeacherFile\\TeacherQuiz\\AddQuestion\\AddQuestion.html",
+      "PackagePath": "staticwebassets\\css\\TeacherFile\\TeacherQuiz\\AddQuestion\\AddQuestion.html"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\TeacherFile\\TeacherQuiz\\AddQuiz\\AddQuiz.html",
+      "PackagePath": "staticwebassets\\css\\TeacherFile\\TeacherQuiz\\AddQuiz\\AddQuiz.html"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\TeacherFile\\TeacherQuiz\\EditQuiz\\EditQuiz.html",
+      "PackagePath": "staticwebassets\\css\\TeacherFile\\TeacherQuiz\\EditQuiz\\EditQuiz.html"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\TeacherFile\\TeacherQuiz\\LastQuestion\\LastQuestion.html",
+      "PackagePath": "staticwebassets\\css\\TeacherFile\\TeacherQuiz\\LastQuestion\\LastQuestion.html"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\TeacherFile\\TeacherStudents\\Students.css",
+      "PackagePath": "staticwebassets\\css\\TeacherFile\\TeacherStudents\\Students.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\TeacherFile\\TeacherTasks\\AddTask\\AddTask.html",
+      "PackagePath": "staticwebassets\\css\\TeacherFile\\TeacherTasks\\AddTask\\AddTask.html"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\TeacherFile\\TeacherTasks\\EditTask\\EditTask.html",
+      "PackagePath": "staticwebassets\\css\\TeacherFile\\TeacherTasks\\EditTask\\EditTask.html"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\TeacherFile\\TeacherTasks\\TeacherTasksView.html\\TeacherTaskView.html",
+      "PackagePath": "staticwebassets\\css\\TeacherFile\\TeacherTasks\\TeacherTasksView.html\\TeacherTaskView.html"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\Text\\Text.css",
+      "PackagePath": "staticwebassets\\css\\Text\\Text.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.js"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.js"
+    },
+    {
+      "Id": "D:\\Capstone Project\\Project V2\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.LMSTT.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.LMSTT.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.LMSTT.props",
+      "PackagePath": "build\\LMSTT.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.LMSTT.props",
+      "PackagePath": "buildMultiTargeting\\LMSTT.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.LMSTT.props",
+      "PackagePath": "buildTransitive\\LMSTT.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

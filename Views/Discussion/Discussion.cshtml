@@ -1,0 +1,350 @@
+@model LMSTT.ViewModels.Discussion.DiscussionViewModel
+@{
+    ViewData["Title"] = "Course Discussion";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/Menu/Menu&Two.css" />
+    <link rel="stylesheet" href="~/css/Text/Text.css" />
+    <link rel="stylesheet" href="~/css/Discussion/Discussion.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    @Html.AntiForgeryToken()
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li class="image">
+                    <div class="forimage">
+                        <img src="~/css/Images/BOOKLOGO-Photoroom.png" alt="" />
+                        <p class="text">campus</p>
+                    </div>
+                </li>
+                <div class="line"></div>
+                <li class="Dashboard">
+                    <a href="@Url.Action("Dashboard", "Student")">
+                        <i class="fa fa-address-card"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <li class="courses">
+                    <a href="@Url.Action("Courses", "Student")">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <p>courses</p>
+                    </a>
+                </li>
+                <div class="line bottom"></div>
+                <li class="personinfo">
+                    <div class="personimg">
+                        <img src="~/css/Images/profilephoto.jpg" />
+                    </div>
+                    <div class="name">
+                        <p>@User.Identity?.Name</p>
+                        <span>Student</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--MENU -->
+        <div class="two">
+            <div class="main">
+                <div class="nav">
+                    <div class="text">
+                        <p>@Model.Title</p>
+                    </div>
+                    <div class="buttons">
+                        <button onclick="location.href='@Url.Action("Logout", "Account")'">
+                            <i class="fa fa-sign-out"></i>
+                        </button>
+                        <button>
+                            <i class="fa-regular fa-bell"></i>
+                        </button>
+                        <button>
+                            <i class="fa-regular fa-message"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="text2">Discussion</div>
+                <div class="discussionbox" id="messageContainer">
+                    @foreach (var message in Model.Messages)
+                    {
+                        <div class="box @(message.IsCurrentUser ? "mebox" : "otherbox")">
+                            @if (!message.IsCurrentUser)
+                            {
+                                <div class="firstdiv">
+                                    <div class="profileimage">
+                                        <img src="@message.UserPhotoUrl" alt="@message.UserName" />
+                                    </div>
+                                    <div class="name"><p>@message.UserName</p></div>
+                                </div>
+                            }
+                            <div class="seconddiv">
+                                <p>@message.MessageText</p>
+                                <small class="timestamp">@message.SentAt.ToString("HH:mm")</small>
+                            </div>
+                        </div>
+                    }
+                </div>
+                <div class="messagebox">
+                    <input type="text" id="messageInput" class="message" placeholder="Type your message..." />
+                    <button type="button" id="sendButton" class="send-button">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/lib/microsoft/signalr/dist/browser/signalr.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        let connection;
+        let isConnected = false;
+        let reconnectAttempts = 0;
+        const maxReconnectAttempts = 5;
+        const messageInput = document.getElementById('messageInput');
+        const sendButton = document.getElementById('sendButton');
+        const messageContainer = document.getElementById('messageContainer');
+        const tabId = Date.now().toString(); // Unique ID for this browser tab
+
+        function addMessageToDisplay(user, message, timestamp) {
+            const isCurrentUser = user === "@User.Identity?.Name";
+            const messageHtml = `
+                <div class="box ${isCurrentUser ? 'mebox' : 'otherbox'}">
+                    ${!isCurrentUser ? `
+                        <div class="firstdiv">
+                            <div class="profileimage">
+                                <img src="/css/Images/profilephoto.jpg" alt="${user}" />
+                            </div>
+                            <div class="name"><p>${user}</p></div>
+                        </div>
+                    ` : ''}
+                    <div class="seconddiv">
+                        <p>${message}</p>
+                        <small class="timestamp">${new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false })}</small>
+                    </div>
+                </div>
+            `;
+            
+            messageContainer.insertAdjacentHTML('beforeend', messageHtml);
+            messageContainer.scrollTop = messageContainer.scrollHeight;
+        }
+
+        async function startConnection() {
+            if (connection) {
+                try {
+                    await connection.stop();
+                } catch (err) {
+                    console.error("Error stopping existing connection:", err);
+                }
+            }
+
+            try {
+                console.log("Starting SignalR connection...");
+                connection = new signalR.HubConnectionBuilder()
+                    .withUrl("/discussionHub", {
+                        transport: signalR.HttpTransportType.WebSockets,
+                        headers: {
+                            "TabId": tabId
+                        }
+                    })
+                    .withAutomaticReconnect([0, 2000, 5000, 10000, 20000])
+                    .configureLogging(signalR.LogLevel.Information)
+                    .build();
+
+                // Set up the message receiving handler
+                connection.on("ReceiveMessage", function (user, message) {
+                    console.log("Received message from:", user, "Message:", message);
+                    const timestamp = new Date().toLocaleString();
+                    addMessageToDisplay(user, message, timestamp);
+                });
+
+                // Handle reconnection
+                connection.onreconnecting((error) => {
+                    console.log("Attempting to reconnect...", error);
+                    isConnected = false;
+                    sendButton.disabled = true;
+                    reconnectAttempts++;
+                    
+                    if (reconnectAttempts <= maxReconnectAttempts) {
+                        const notification = document.createElement('div');
+                        notification.className = 'connection-status warning';
+                        notification.textContent = 'Connection lost. Reconnecting...';
+                        messageContainer.appendChild(notification);
+                    }
+                });
+
+                connection.onreconnected((connectionId) => {
+                    console.log("Reconnected. ConnectionId:", connectionId);
+                    isConnected = true;
+                    sendButton.disabled = false;
+                    reconnectAttempts = 0;
+                    
+                    // Remove any connection status messages
+                    const statusMessages = document.getElementsByClassName('connection-status');
+                    Array.from(statusMessages).forEach(msg => msg.remove());
+                    
+                    // Rejoin the discussion group
+                    connection.invoke("JoinDiscussion", "@Model.Id.ToString()").catch(function (err) {
+                        console.error("Error rejoining discussion:", err);
+                        return connection.stop();
+                    });
+                });
+
+                connection.onclose((error) => {
+                    console.log("Connection closed.", error);
+                    isConnected = false;
+                    sendButton.disabled = true;
+                    
+                    const notification = document.createElement('div');
+                    notification.className = 'connection-status error';
+                    notification.textContent = 'Connection lost. Please refresh the page to reconnect.';
+                    messageContainer.appendChild(notification);
+                });
+
+                await connection.start();
+                console.log("SignalR connection started");
+                
+                await connection.invoke("JoinDiscussion", "@Model.Id.ToString()").catch(function (err) {
+                    console.error("Error joining discussion:", err);
+                    return connection.stop();
+                });
+                
+                console.log("Joined discussion group:", "@Model.Id.ToString()");
+                isConnected = true;
+                sendButton.disabled = false;
+                reconnectAttempts = 0;
+
+                // Store connection ID in localStorage
+                localStorage.setItem(`discussionConnection_${tabId}`, connection.connectionId);
+            } catch (err) {
+                console.error("Error establishing connection:", err);
+                const notification = document.createElement('div');
+                notification.className = 'connection-status error';
+                notification.textContent = 'Failed to connect. Please refresh the page.';
+                messageContainer.appendChild(notification);
+            }
+        }
+
+        async function sendMessage() {
+            if (!messageInput.value.trim()) {
+                return;
+            }
+
+            if (!isConnected) {
+                const shouldRetry = confirm('Connection lost. Would you like to try reconnecting?');
+                if (shouldRetry && reconnectAttempts < maxReconnectAttempts) {
+                    await startConnection();
+                    return;
+                } else {
+                    alert('Please refresh the page to reconnect.');
+                    return;
+                }
+            }
+
+            messageInput.disabled = true;
+            sendButton.disabled = true;
+
+            try {
+                const message = messageInput.value.trim();
+                console.log("Sending message:", message);
+
+                const token = document.querySelector('input[name="__RequestVerificationToken"]').value;
+                const response = await fetch('@Url.Action("SendMessage", "Discussion")', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'RequestVerificationToken': token,
+                        'TabId': tabId
+                    },
+                    body: JSON.stringify({
+                        discussionId: @Model.Id,
+                        messageText: message
+                    })
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to send message');
+                }
+
+                messageInput.value = '';
+                console.log("Message sent successfully");
+            } catch (error) {
+                console.error('Error sending message:', error);
+                alert('Failed to send message. Please try again.');
+            } finally {
+                messageInput.disabled = false;
+                sendButton.disabled = !isConnected;
+                messageInput.focus();
+            }
+        }
+
+        // Add click handler for send button
+        sendButton.addEventListener('click', async (event) => {
+            event.preventDefault();
+            await sendMessage();
+        });
+
+        // Add enter key handler
+        messageInput.addEventListener('keypress', async (event) => {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                await sendMessage();
+            }
+        });
+
+        // Handle tab visibility changes
+        document.addEventListener('visibilitychange', async () => {
+            if (document.visibilityState === 'visible') {
+                if (!isConnected) {
+                    await startConnection();
+                }
+            }
+        });
+
+        // Start connection
+        startConnection();
+
+        // Cleanup on page unload
+        window.addEventListener('beforeunload', async () => {
+            if (connection) {
+                try {
+                    await connection.invoke("LeaveDiscussion", "@Model.Id.ToString()");
+                    await connection.stop();
+                    localStorage.removeItem(`discussionConnection_${tabId}`);
+                } catch (err) {
+                    console.error("Error during cleanup:", err);
+                }
+            }
+        });
+    });
+    </script>
+
+    <style>
+    .connection-status {
+        background-color: #fff3cd;
+        color: #856404;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .connection-status.warning {
+        background-color: #fff3cd;
+        color: #856404;
+    }
+
+    .connection-status.error {
+        background-color: #f8d7da;
+        color: #721c24;
+    }
+    </style>
+</body>
+</html> 

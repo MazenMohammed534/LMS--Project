@@ -1,0 +1,150 @@
+@model List<LMSTT.ViewModels.Admin.TeacherListItemViewModel>
+@{
+    ViewData["Title"] = "Teachers";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/Menu/Menu&Two.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="~/css/AdminFile/AdminTeacher/TeacherView/Teacher.css" />
+    <title>Teachers</title>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li class="image">
+                    <div class="forimage">
+                        <img src="~/css/Images/BOOKLOGO-Photoroom.png" alt="">
+                        <p class="text">campus</p>
+                    </div>
+                </li>
+                <div class="line"></div>
+                <li class="Dashboard">
+                    <a href="@Url.Action("AdminDashboard", "Admin")">
+                        <i class="fa fa-address-card"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <li class="admins">
+                    <a href="@Url.Action("AdminView", "Admin")">
+                        <i class='fas fa-user-shield'></i>
+                        <p>admins</p>
+                    </a>
+                </li>
+                <li class="teachers">
+                    <a href="@Url.Action("TeacherView", "Admin")">
+                        <i class="fa-solid fa-person-chalkboard"></i>
+                        <p>teachers</p>
+                    </a>
+                </li>
+                <li class="students">
+                    <a href="@Url.Action("ViewStudent", "Admin")">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <p>students</p>
+                    </a>
+                </li>
+                <li class="courses">
+                    <a href="@Url.Action("ViewCourse", "Admin")">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <p>courses</p>
+                    </a>
+                </li>
+                <li class="departments">
+                    <a href="@Url.Action("ViewDepartments", "Admin")">
+                        <i class='far fa-window-restore'></i>
+                        <p>departments</p>
+                    </a>
+                </li>
+                <div class="line bottom"></div>
+                <li class="personinfo">
+                    <div class="personimg">
+                        <img src="~/css/Images/profilephoto.jpg" />
+                    </div>
+                    <div class="name">
+                        <p>@User.Identity.Name</p>
+                        <span>Admin</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="two">
+            <div class="main">
+                <div class="nav">
+                    <div class="text">
+                        <p>Teachers Management</p>
+                        <span>Manage system administrators and their permissions.</span>
+                    </div>
+                    <div class="buttons">
+                        <button onclick="location.href='@Url.Action("Logout", "Account")'">
+                            <i class="fa fa-sign-out"></i>
+                        </button>
+                        <button>
+                            <i class="fa-regular fa-bell"></i>
+                        </button>
+                        <button>
+                            <i class="fa-regular fa-message"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="button">
+                    <button>
+                        <a asp-action="AddTeacher">
+                            <div class="buttonicon">
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                            <p>Add Teacher</p>
+                        </a>
+                    </button>
+                </div>
+                <div class="table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td class="stuname">name</td>
+                                <td class="email">email</td>
+                                <td class="exten"></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var teacher in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        <div class="person">
+                                            <div class="personimg">
+                                                <img src="~/css/Images/profilephoto.jpg" alt="" />
+                                            </div>
+                                            <div class="personname">@teacher.FullName</div>
+                                        </div>
+                                    </td>
+                                    <td class="email">@teacher.Email</td>
+                                    <td class="del">
+                                        <button>
+                                            <a asp-action="EditTeacher" asp-route-id="@teacher.Id">edit</a>
+                                        </button>
+                                        <form asp-action="DeleteTeacher" asp-route-id="@teacher.Id" method="post" style="display:inline;">
+                                            <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this teacher?');">Delete</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="prev"><button>previous</button></td>
+                                <td></td>
+                                <td class="next"><button>next</button></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

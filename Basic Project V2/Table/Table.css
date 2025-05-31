@@ -1,0 +1,156 @@
+.table {
+  /* margin-top: 9%; */
+  margin-left: 2.5%;
+  width: 80%;
+  height: 80%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.table table {
+  background-color: #ffffff;
+  width: 100%;
+  /* height: 100%; */
+  border-collapse: collapse;
+}
+
+table thead {
+  width: 100%;
+  height: 60px;
+  background-color: #eaecf0;
+  border-spacing: 0;
+}
+
+table thead td {
+  border-spacing: 0;
+  color: #000;
+  font-family: trykker;
+  font-size: 25px;
+  padding: 8px;
+}
+
+thead .firsth {
+  padding-left: 20px;
+  width: 40%;
+}
+thead .secondh {
+  width: 40%;
+}
+
+thead .thirdh {
+  width: 10%;
+}
+
+table tbody td {
+  font-size: 25px;
+  color: #101828;
+  padding-left: 15px;
+}
+
+table tbody tr {
+  width: 100%;
+  height: 50px;
+}
+
+table tr {
+  border: 1px solid #ddd;
+}
+
+.person {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.person .personimg img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.person .personname {
+  color: #000000;
+  font-family: trykker;
+  font-size: 21px;
+}
+
+tbody .firstb {
+  padding-left: 20px;
+  text-transform: uppercase;
+  font-size: 22px;
+}
+
+tbody .secondb {
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: none;
+}
+
+tbody .createdby {
+  font-weight: normal;
+  text-transform: capitalize;
+  font-size: 22px;
+}
+
+tbody .thirdb {
+  margin-top: 8px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+tbody .thirdb button {
+  border: 1px solid #ddd;
+  width: 70px;
+  height: 33px;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: rgb(159, 28, 28);
+  color: #ffffff;
+}
+
+tbody .thirdb button a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  background-color: #4281ed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+tfoot {
+  height: 55px;
+  padding: 10px 0;
+}
+
+tfoot tr td {
+  padding: 0 20px;
+}
+
+tfoot .prev {
+  /* padding-right: 20px; */
+  text-align: left;
+}
+tfoot .next {
+  /* padding-left: 20px; */
+  text-align: right;
+}
+
+tfoot .prev button,
+tfoot .next button {
+  border-radius: 8px;
+  text-align: center;
+  width: 90px;
+  background-color: #eaecf0;
+  border: 1px solid #ddd;
+  color: #000000;
+  height: 35px;
+  cursor: pointer;
+}

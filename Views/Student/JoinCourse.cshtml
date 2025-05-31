@@ -1,0 +1,128 @@
+@model LMSTT.ViewModels.Student.JoinCourseViewModel
+@{
+    ViewData["Title"] = "Join Course";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Course</title>
+    <link rel="stylesheet" href="~/css/menu/menu&two.css" />
+    <link rel="stylesheet" href="~/css/form/form.css" />
+    <link rel="stylesheet" href="~/css/text/text.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="~/css/studentfile/course/joincourse/joincourse.css" />
+    <style>
+        .nav {
+            justify-content: flex-end;
+        }
+
+        .courses a {
+            background-color: #4281ed;
+        }
+    </style>
+    <script>
+        (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized")
+        {window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}
+        window.chatbase.q.push(arguments)};
+        window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q")
+        {return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function()
+        {const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";
+        script.id="qxHZg6Ehg3MfGMjhJT7nJ";script.domain="www.chatbase.co";document.body.appendChild(script)};
+        if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li class="image">
+                    <div class="forimage">
+                        <img src="~/css/Images/BOOKLOGO-Photoroom.png" alt="" />
+                        <p class="text">campus</p>
+                    </div>
+                </li>
+                <div class="line"></div>
+                <li class="Dashboard">
+                    <a href="@Url.Action("Dashboard", "Student")">
+                        <i class="fa fa-address-card"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <li class="courses">
+                    <a href="@Url.Action("Courses", "Student")">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <p>courses</p>
+                    </a>
+                </li>
+                <div class="line bottom"></div>
+                <li class="personinfo">
+                    <div class="personimg">
+                        <img src="~/css/Images/profilephoto.jpg" alt="Profile Photo" />
+                    </div>
+                    <div class="name">
+                        <p>@User.Identity?.Name</p>
+                        <span>Student</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--MENU -->
+        <div class="two">
+            <div class="main">
+                <div class="nav">
+                    <div class="buttons">
+                        <button onclick="location.href='@Url.Action("Logout", "Account")'">
+                            <i class="fa fa-sign-out"></i>
+                        </button>
+                        <button>
+                            <i class="fa-regular fa-bell"></i>
+                        </button>
+                        <button>
+                            <i class="fa-regular fa-message"></i>
+                        </button>
+                    </div>
+                    <!--ICONS-->
+                </div>
+                <!--NAV-->
+                <div class="text">join course</div>
+                <div class="form">
+                    <form asp-action="JoinCourse" method="post">
+                        @Html.AntiForgeryToken()
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        
+                        <label asp-for="CourseCode">course code</label>
+                        <input asp-for="CourseCode" type="text" />
+                        <span asp-validation-for="CourseCode" class="text-danger"></span>
+                        
+                        <input type="submit" value="Join" class="subbutton" />
+                    </form>
+                </div>
+            </div>
+            <!-- MAIN -->
+        </div>
+        <!--TWO-->
+    </div>
+    <!--Container-->
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["Success"]
+        </div>
+    }
+
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["Error"]
+        </div>
+    }
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+</body>
+</html> 

@@ -1,0 +1,141 @@
+@model LMSTT.ViewModels.Assignment.StudentTasksViewModel
+@{
+    ViewData["Title"] = "Tasks";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <link rel="stylesheet" href="~/css/Menu/Menu&Two.css" />
+    <link rel="stylesheet" href="~/css/CourseQuizzes/CourseQuizzes.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="~/css/Text/Text.css">
+    <link rel="stylesheet" href="~/css/Table2/Table2.css">
+    <style>
+        .courses a {
+            background-color: #4281ed;
+        }
+
+        .nav {
+            justify-content: flex-end;
+        }
+    </style>
+    <script>
+        (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized")
+        {window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}
+        window.chatbase.q.push(arguments)};
+        window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q")
+        {return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function()
+        {const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";
+        script.id="qxHZg6Ehg3MfGMjhJT7nJ";script.domain="www.chatbase.co";document.body.appendChild(script)};
+        if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li class="image">
+                    <div class="forimage">
+                        <img src="~/css/Images/BOOKLOGO-Photoroom.png" alt="" />
+                        <p class="text">campus</p>
+                    </div>
+                </li>
+                <div class="line"></div>
+                <li class="Dashboard">
+                    <a href="@Url.Action("Dashboard", "Student")">
+                        <i class="fa fa-address-card"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <li class="courses">
+                    <a href="@Url.Action("Courses", "Student")">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <p>courses</p>
+                    </a>
+                </li>
+                <div class="line bottom"></div>
+                <li class="personinfo">
+                    <div class="personimg">
+                        <img src="~/css/Images/profilephoto.jpg" />
+                    </div>
+                    <div class="name">
+                        <p>@User.Identity?.Name</p>
+                        <span>Student</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--MENU -->
+        <div class="two">
+            <div class="main">
+                <div class="nav">
+                    <div class="buttons">
+                        <form asp-controller="Account" asp-action="Logout" method="post" style="display: inline;">
+                            <button type="submit">
+                                <i class="fa fa-sign-out"></i>
+                            </button>
+                        </form>
+                        <button>
+                            <i class="fa-regular fa-bell"></i>
+                        </button>
+                        <button>
+                            <i class="fa-regular fa-message"></i>
+                        </button>
+                    </div>
+                </div>
+                <!--NAV-->
+                <div class="minimain">
+                    <p class="text">@Model.CourseTitle</p>
+
+                    <div class="table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Task name</td>
+                                    <td>Description</td>
+                                    <td>due-date</td>
+                                    <td>Action</td>
+                                    <td>status</td>
+                                    <td class="extenh"></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var task in Model.Tasks)
+                                {
+                                    <tr>
+                                        <td>@task.Title</td>
+                                        <td>@task.Description</td>
+                                        <td>@task.DueDate.ToString("d MMM")</td>
+                                        <td>@(task.ActionStatus == ActionStatus.NoAction ? "Pending" : task.ActionStatus.ToString())</td>
+                                        <td>@task.CompletionStatus.ToString()</td>
+                                        <td class="extenb">
+                                            @if (task.CanSubmit)
+                                            {
+                                                <button>
+                                                    <a href="@Url.Action("Submit", "Assignment", new { id = task.Id })">Submit Task</a>
+                                                </button>
+                                            }
+                                            else if (task.CanViewSubmission)
+                                            {
+                                                <button>
+                                                    <a href="@Url.Action("StudentViewSubmission", "Assignment", new { id = task.Id })">View Submission</a>
+                                                </button>
+                                            }
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

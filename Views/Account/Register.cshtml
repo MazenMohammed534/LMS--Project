@@ -1,0 +1,54 @@
+﻿@model LMSTT.ViewModels.Account.RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campus Sign Up</title>
+    <link rel="stylesheet" href="~/css/Login&Register/Register.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <div class="logo">
+                <img src="~/css/Images/Logo.jpg" alt="logo" />
+            </div>
+            <h2>Create Account</h2>
+            <form asp-controller="Account" asp-action="Register" method="post">
+                <div asp-validation-summary="All" class="text-danger"></div>
+
+                <label asp-for="FullName">Full Name</label>
+                <input asp-for="FullName" placeholder="Enter your name" />
+                <span asp-validation-for="FullName" class="text-danger"></span>
+
+                <label asp-for="Email">Email</label>
+                <input asp-for="Email" placeholder="Enter your email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+
+                <label asp-for="Password">Password</label>
+                <input asp-for="Password" placeholder="Enter your password" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+
+                <label asp-for="ConfirmPassword">Confirm Password</label>
+                <input asp-for="ConfirmPassword" placeholder="Enter your password" />
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+
+                <button type="submit">Sign up</button>
+
+                <div class="login-redirect">
+                    Already have an account? <a asp-controller="Account" asp-action="Login">Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+</body>
+</html>

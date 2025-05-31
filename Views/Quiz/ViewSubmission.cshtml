@@ -1,0 +1,251 @@
+@model LMSTT.ViewModels.Quiz.QuizSubmissionDetailsViewModel
+@{
+    ViewData["Title"] = "Quiz Submission";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzes</title>
+    <link rel="stylesheet" href="~/css/Menu/Menu&Two.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="~/css/Text/Text.css">
+    <link rel="stylesheet" href="~/css/Button2/Button2.css" />
+    <style>
+        .courses a {
+            background-color: #4281ed;
+        }
+
+        .nav {
+            justify-content: flex-end;
+        }
+
+        .question {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            color: #00173D;
+        }
+
+        .header-quiz {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            color: #00173D;
+        }
+
+        .question-body {
+            margin-top: 15px;
+        }
+
+        .question-text {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: #00173D;
+            font-weight: 500;
+        }
+
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            color: #00173D;
+        }
+
+        .choice {
+            padding: 10px 15px;
+            border-radius: 5px;
+            background: #f8f9fa;
+            display: flex;
+            align-items: center;
+            color: #00173D;
+        }
+
+        .choice label {
+            margin-left: 10px;
+            font-size: 14px;
+                color: #00173D;
+        }
+
+            .choice label span {
+                margin-left: 10px;
+                font-size: 14px;
+                color: #00173D;
+            }
+
+        .correct-answer {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #00173D;
+        }
+
+        .incorrect-answer {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #00173D;
+        }
+
+        .submit-button {
+            display: inline-block;
+            padding: 8px 20px;
+            background: #4281ed;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 14px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background: #2d5bb9;
+        }
+
+        .minimain {
+            padding: 20px;
+        }
+
+        .question-no {
+            font-weight: 500;
+            color: #00173D;
+        }
+
+        .remaining-time {
+            font-weight: 500;
+            color: #dc3545;
+            color: #00173D;
+        }
+
+        .total-question, .Total-time {
+            color: #666;
+        }
+        .total-question{
+            color: #00173D;
+        }
+
+        .Total-time{
+            color: #00173D;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li class="image">
+                    <div class="forimage">
+                        <img src="~/css/Images/BOOKLOGO-Photoroom.png" alt="" />
+                        <p class="text">campus</p>
+                    </div>
+                </li>
+                <div class="line"></div>
+                <li class="Dashboard">
+                    <a asp-controller="Student" asp-action="Dashboard">
+                        <i class="fa fa-address-card"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <li class="courses">
+                    <a asp-controller="Student" asp-action="Courses">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <p>courses</p>
+                    </a>
+                </li>
+                <div class="line bottom"></div>
+                <li class="personinfo">
+                    <div class="personimg">
+                        <img src="~/css/Images/profilephoto.jpg" />
+                    </div>
+                    <div class="name">
+                        <p>@User.Identity?.Name</p>
+                        <span>Student</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--MENU -->
+        <div class="two">
+            <div class="main">
+                <div class="nav">
+                    <div class="buttons">
+                        <button onclick="location.href='@Url.Action("Logout", "Account")'">
+                            <i class="fa fa-sign-out"></i>
+                        </button>
+                        <button>
+                            <i class="fa-regular fa-bell"></i>
+                        </button>
+                        <button>
+                            <i class="fa-regular fa-message"></i>
+                        </button>
+                    </div>
+                    <!--ICONS-->
+                </div>
+                <!--NAV-->
+                <div class="minimain">
+                    <p class="text">@Model.QuizTitle</p>
+                    <div class="question">
+                        <div class="header-quiz">
+                            <div class="question-no">Final Score: @Model.Score</div>
+                            <div class="Total-time">Total time: @Model.TimeLimit m</div>
+                            <div class="total-question">Total Question: @Model.TotalQuestions</div>
+                        </div>
+
+                        @foreach (var question in Model.Questions)
+                        {
+                            <div class="question-body">
+                                <p class="question-text">Q @question.QuestionNumber: @question.QuestionText</p>
+                                <div class="options">
+                                    @for (int i = 0; i < question.Options.Count; i++)
+                                    {
+                                        var option = question.Options[i];
+                                        var isCorrectAnswer = option == question.CorrectAnswer;
+                                        var isStudentAnswer = option == question.StudentAnswer;
+                                        var className = "choice";
+                                        
+                                        if (isCorrectAnswer)
+                                        {
+                                            className += " correct-answer";
+                                        }
+                                        else if (isStudentAnswer && !isCorrectAnswer)
+                                        {
+                                            className += " incorrect-answer";
+                                        }
+
+                                        <div class="@className">
+                                            <input type="radio" disabled @(isStudentAnswer ? "checked" : "") id="q@(question.QuestionNumber)_@i" />
+                                            <label for="q@(question.QuestionNumber)_@i">
+                                                @option
+                                                @if (isCorrectAnswer)
+                                                {
+                                                    <span> (Correct Answer)</span>
+                                                }
+                                                @if (isStudentAnswer && !isCorrectAnswer)
+                                                {
+                                                    <span> (Your Answer)</span>
+                                                }
+                                            </label>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        }
+
+                        <div style="margin-top: 20px; display: flex; gap: 10px;">
+                            <a href="@Url.Action("StudentQuizzes", "Quiz", new { id = Model.CourseId })" class="submit-button">Back</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

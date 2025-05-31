@@ -1,0 +1,111 @@
+.minimain {
+  /* background-color: aqua; */
+  width: 95%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.minimain .title {
+  font-size: 30px;
+  color: #00173d;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.switch {
+  outline: 1px solid #0000005a;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  width: 350px;
+  height: 50px;
+  background-color: #d9d9d9;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.switch div a {
+  text-decoration: none;
+  color: black;
+}
+
+.current {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.archived {
+  width: 55%;
+  height: 50px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 40%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subject {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.minisub {
+  background-color: #ffffff;
+  width: 260px;
+  height: 330px;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.minisub .subimg {
+  width: 100%;
+  height: 45.5%;
+  border-radius: 15px;
+  background-color: #d9d9d9;
+}
+
+.minisub .subimg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.quiz {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.quiz p {
+  font-weight: bold;
+  color: #00173d;
+}
+
+.quiz span {
+  font-weight: bold;
+  color: #00173d;
+}
+
+.exten {
+  padding: 10px;
+  /* background-color: #4281ed; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  grid-area: 8px;
+  gap: 10px;
+}
+.exten .edit i {
+  color: #000;
+  cursor: pointer;
+}
+
+.exten .delete i {
+  color: #000;
+  cursor: pointer;
+}

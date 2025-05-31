@@ -1,0 +1,157 @@
+@model LMSTT.ViewModels.Teacher.TeacherDashboardViewModel
+
+@{
+    ViewData["Title"] = "Teacher Dashboard";
+	Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link href="~/css/menu/menu&two.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link href="~/css/teacherfile/teacherdashboard/dashboard.css" rel="stylesheet" />
+</head>
+<body>
+<div class="container">
+    <div class="menu">
+        <ul>
+            <li class="image">  
+                <div class="forimage">
+                    <img src="~/css/Images/BOOKLOGO-Photoroom.png" alt="Logo">
+                    <p class="text">campus</p>
+                </div>
+            </li>
+            <div class="line"></div>
+            <li class="Dashboard">
+                <a href="@Url.Action("TeacherDashboard", "Teacher")">
+                    <i class="fa fa-address-card"></i>
+                    <p>Dashboard</p>
+                </a>
+            </li>
+            <li class="students">
+                    <a href="@Url.Action("Students", "Teacher")">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <p>students</p>
+                </a>
+            </li>
+            <li class="courses">
+                <a href="@Url.Action("Courses", "Teacher")">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <p>courses</p>
+                </a>
+            </li>
+                <li class="quizzes">
+                    <a href="@Url.Action("TeacherQuizzesView", "Quiz")">
+                        <i class="fa fa-book"></i>
+                        <p>Quiz</p>
+                    </a>
+                </li>
+                <li class="tasks">
+                    <a href="@Url.Action("TeacherAssignments", "Assignment")">
+                        <i class="fa-solid fa-list-check"></i>
+                        <p>Tasks</p>
+                    </a>
+                </li>
+            <div class="line bottom"></div>
+            <li class="personinfo">
+                <div class="personimg">
+                    <img src="~/css/Images/profilephoto.jpg" alt="Profile" />
+                </div>
+                <div class="name">
+                    <p>@Model.TeacherName</p>
+                    <span>Teacher</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="two">
+        <div class="main">
+            <div class="nav">
+                <div class="text">
+                    <p>dashboard</p>
+                    <span>Welcome to the Learning Management System</span>
+                </div>
+                <div class="buttons">
+                    <button onclick="location.href='@Url.Action("Logout", "Account")'">
+                        <i class="fa fa-sign-out"></i>
+                    </button>
+                    <button>
+                        <i class="fa-regular fa-bell"></i>
+                    </button>
+                    <button>
+                        <i class="fa-regular fa-message"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="boxinfo">
+                <div class="box">
+                    <div class="num">
+                        <p>My Students</p>
+                        <span class="studentnum">@Model.TotalStudents</span>
+                    </div>
+                    <div class="blue icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="num">
+                        <p>My Courses</p>
+                        <span class="coursenum">@Model.TotalCourses</span>
+                    </div>
+                    <div class="icon bpink">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="num">
+                        <p>My Tasks</p>
+                        <span class="tasknum">@Model.TotalTasks</span>
+                    </div>
+                    <div class="icon orange">
+                        <i class='fas fa-tasks'></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="num">
+                        <p>My Quizzes</p>
+                        <span class="quiznum">@Model.TotalQuizzes</span>
+                    </div>
+                    <div class="icon pink">
+                        <i class="fa fa-book"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="details">
+                <div class="cont">
+                    <p>course progress :</p>
+                    <span class="cousreperc">90%</span>
+                </div>
+                <div class="cont">
+                    <p>attendance progress :</p>
+                    <span class="attenperc">97%</span>
+                </div>
+                <div class="cont">
+                    <p>assignment progress :</p>
+                    <span class="assigperc">10%</span>
+                </div>
+                <div class="cont">
+                    <p>student progress :</p>
+                    <span class="studentperc">50%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+@section Styles {
+    <link rel="stylesheet" href="~/css/TeacherFile/TeacherDashboard/Dashboard.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+} 

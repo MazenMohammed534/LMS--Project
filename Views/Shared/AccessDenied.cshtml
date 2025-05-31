@@ -1,0 +1,75 @@
+@{
+    ViewData["Title"] = "Access Denied";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Denied</title>
+    <link rel="stylesheet" href="~/css/Menu/Menu&Two.css" />
+    <link rel="stylesheet" href="~/css/Button2/Button2.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <style>
+        .access-denied-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+
+        .error-icon {
+            font-size: 64px;
+            color: #dc3545;
+            margin-bottom: 20px;
+        }
+
+        .error-title {
+            font-size: 32px;
+            color: #343a40;
+            margin-bottom: 16px;
+        }
+
+        .error-message {
+            font-size: 18px;
+            color: #6c757d;
+            margin-bottom: 24px;
+            max-width: 600px;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #4281ed;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #2d5bb9;
+        }
+    </style>
+</head>
+<body>
+    <div class="access-denied-container">
+        <i class="fas fa-exclamation-circle error-icon"></i>
+        <h1 class="error-title">Access Denied</h1>
+        <p class="error-message">
+            Sorry, you don't have permission to access this resource. 
+            Please contact your administrator if you believe this is a mistake.
+        </p>
+        <a href="@Url.Action("Index", "Home")" class="back-button">
+            <i class="fas fa-home"></i> Return to Home
+        </a>
+    </div>
+</body>
+</html> 

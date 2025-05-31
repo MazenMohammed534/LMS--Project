@@ -1,0 +1,204 @@
+@model IEnumerable<LMSTT.ViewModels.Quiz.TeacherQuizViewModel>
+@{
+    ViewData["Title"] = "Quizzes";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/Menu/Menu&Two.css" />
+    <link rel="stylesheet" href="~/css/Table2/Table2.css" />
+    <link rel="stylesheet" href="~/css/Text/Text.css" />
+    <link rel="stylesheet" href="~/css/Button2/Button2.css" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <title>Quizzes</title>
+    <style>
+        .quizzes a {
+            background-color: #4281ed;
+        }
+
+        .nav {
+            justify-content: flex-end;
+        }
+
+        .edit-btn, .delete-btn {
+            padding: 5px 10px;
+            margin: 0 5px;
+            border-radius: 4px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .edit-btn {
+            background-color: #4281ed;
+            color: white;
+        }
+
+        .edit-btn:hover {
+            background-color: #2d5bb9;
+        }
+
+        .delete-btn {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        .delete-btn:hover {
+            background-color: #bb2d3b;
+        }
+
+        .extenb {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+    </style>
+    <script>
+        (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized")
+        {window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}
+        window.chatbase.q.push(arguments)};
+        window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q")
+        {return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function()
+        {const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";
+        script.id="qxHZg6Ehg3MfGMjhJT7nJ";script.domain="www.chatbase.co";document.body.appendChild(script)};
+        if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li class="image">
+                    <div class="forimage">
+                        <img src="~/css/Images/BOOKLOGO-Photoroom.png" alt="Logo">
+                        <p class="text">campus</p>
+                    </div>
+                </li>
+                <div class="line"></div>
+                <li class="Dashboard">
+                    <a href="@Url.Action("TeacherDashboard", "Teacher")">
+                        <i class="fa fa-address-card"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <li class="students">
+                    <a href="@Url.Action("Students", "Teacher")">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <p>students</p>
+                    </a>
+                </li>
+                <li class="courses">
+                    <a href="@Url.Action("Courses", "Teacher")">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <p>courses</p>
+                    </a>
+                </li>
+                <li class="quizzes">
+                    <a href="@Url.Action("TeacherQuizzesView", "Quiz")">
+                        <i class="fa fa-book"></i>
+                        <p>Quiz</p>
+                    </a>
+                </li>
+                <li class="tasks">
+                    <a href="@Url.Action("TeacherAssignments", "Assignment")">
+                        <i class="fa-solid fa-list-check"></i>
+                        <p>Tasks</p>
+                    </a>
+                </li>
+                <div class="line bottom"></div>
+                <li class="personinfo">
+                    <div class="personimg">
+                        <img src="~/css/Images/profilephoto.jpg" alt="Profile" />
+                    </div>
+                    <div class="name">
+                        <p>@User.Identity.Name</p>
+                        <span>Teacher</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--MENU -->
+        <div class="two">
+            <div class="main">
+                <div class="nav">
+                    <div class="buttons">
+                        <button onclick="location.href='@Url.Action("Logout", "Account")'">
+                            <i class="fa fa-sign-out"></i>
+                        </button>
+                        <button>
+                            <i class="fa-regular fa-bell"></i>
+                        </button>
+                        <button>
+                            <i class="fa-regular fa-message"></i>
+                        </button>
+                    </div>
+                    <!--ICONS-->
+                </div>
+                <!--NAV-->
+                <div class="text">quizzes</div>
+                <div class="button">
+                    <button><a asp-action="Create">add quiz</a></button>
+                </div>
+                <div class="table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>quiz name</td>
+                                <td>course name</td>
+                                <td>due-date</td>
+                                <td>Questions num</td>
+                                <td>status</td>
+                                <td>time limit</td>
+                                <td class="extenh"></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var quiz in Model)
+                            {
+                                <tr>
+                                    <td>@quiz.Title</td>
+                                    <td>@quiz.CourseName</td>
+                                    <td>@quiz.DueDate.ToString("yyyy-MM-dd")</td>
+                                    <td>@quiz.QuestionsNumber</td>
+                                    <td>@quiz.Status</td>
+                                    <td>@quiz.TimeLimit m</td>
+                                    <td class="extenb">
+                                        <a href="@Url.Action("Edit", "Quiz", new { id = quiz.Id })" class="edit-btn">
+                                            <i class="fas fa-edit"></i> Edit
+                                        </a>
+                                        <a href="#" onclick="deleteQuiz(@quiz.Id)" class="delete-btn">
+                                            <i class="fas fa-trash"></i> Delete
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td class="prev" colspan="3"><button>previous</button></td>
+                                <td class="next" colspan="4"><button>next</button></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <!-- TABLE -->
+            </div>
+            <!-- MAIN -->
+        </div>
+        <!--TWO-->
+    </div>
+    <!--Container-->
+
+    <script>
+        function deleteQuiz(id) {
+            if (confirm('Are you sure you want to delete this quiz?')) {
+                window.location.href = '@Url.Action("Delete", "Quiz")/' + id;
+            }
+        }
+    </script>
+</body>
+</html>

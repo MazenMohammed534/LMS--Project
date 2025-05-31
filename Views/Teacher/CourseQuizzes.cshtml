@@ -1,0 +1,173 @@
+@model IEnumerable<LMSTT.ViewModels.Quiz.TeacherQuizViewModel>
+@{
+    ViewData["Title"] = "Course Quizzes";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Quizzes</title>
+    <link rel="stylesheet" href="~/css/Menu/Menu&Two.css" />
+    <link rel="stylesheet" href="~/css/CourseMaterial/CourseMaterial.css" />
+    <link rel="stylesheet" href="~/css/Text/Text.css" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <style>
+        .nav {
+            justify-content: flex-end;
+        }
+
+        .courses a {
+            background-color: #4281ed;
+        }
+
+        .box {
+            margin-bottom: 15px;
+        }
+
+        .exten button {
+            background-color: #4281ed;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .exten button:hover {
+            background-color: #2d5bb9;
+        }
+
+        .exten a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .add-quiz {
+            margin-bottom: 20px;
+        }
+
+        .add-quiz button {
+            background-color: #4281ed;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .add-quiz button:hover {
+            background-color: #2d5bb9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li class="image">
+                    <div class="forimage">
+                        <img src="~/css/Images/BOOKLOGO-Photoroom.png" alt="Logo">
+                        <p class="text">campus</p>
+                    </div>
+                </li>
+                <div class="line"></div>
+                <li class="Dashboard">
+                    <a href="@Url.Action("TeacherDashboard", "Teacher")">
+                        <i class="fa fa-address-card"></i>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <li class="students">
+                    <a href="@Url.Action("Students", "Teacher")">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <p>students</p>
+                    </a>
+                </li>
+                <li class="courses">
+                    <a href="@Url.Action("Courses", "Teacher")">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <p>courses</p>
+                    </a>
+                </li>
+                <li class="quizzes">
+                    <a href="@Url.Action("TeacherQuizzesView", "Quiz")">
+                        <i class="fa-solid fa-book-open"></i>
+                        <p>quizzes</p>
+                    </a>
+                </li>
+                <li class="tasks">
+                    <a href="@Url.Action("TeacherAssignments", "Assignment")">
+                        <i class="fa-solid fa-list-check"></i>
+                        <p>Tasks</p>
+                    </a>
+                </li>
+                <div class="line bottom"></div>
+                <li class="personinfo">
+                    <div class="personimg">
+                        <img src="~/css/Images/profilephoto.jpg" alt="Profile" />
+                    </div>
+                    <div class="name">
+                        <p>@User.Identity?.Name</p>
+                        <span>Teacher</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--MENU -->
+        <div class="two">
+            <div class="main">
+                <div class="nav">
+                    <div class="buttons">
+                        <button onclick="location.href='@Url.Action("Logout", "Account")'">
+                            <i class="fa fa-sign-out"></i>
+                        </button>
+                        <button>
+                            <i class="fa-regular fa-bell"></i>
+                        </button>
+                        <button>
+                            <i class="fa-regular fa-message"></i>
+                        </button>
+                    </div>
+                    <!--ICONS-->
+                </div>
+                <!--NAV-->
+                <div class="text">
+                    @ViewBag.CourseTitle
+                    <p>all quizzes</p>
+                </div>
+                <div class="boxcontainer">
+                    @foreach (var quiz in Model)
+                    {
+                        <div class="box">
+                            <div class="firstdiv">
+                                <div class="firsticon">
+                                    <i class="fa fa-book" aria-hidden="true"></i>
+                                </div>
+                                <div class="lecturename">
+                                    <p>@quiz.Title</p>
+                                </div>
+                            </div>
+                            <div class="exten">
+                                <button>
+                                    <a href="@Url.Action("QuizResults", "Quiz", new { id = quiz.Id })">view results</a>
+                                </button>
+                            </div>
+                        </div>
+                    }
+                </div>
+                <!-- BOX CONTENT -->
+            </div>
+            <!-- MAIN -->
+        </div>
+        <!--TWO-->
+    </div>
+    <!--Container-->
+</body>
+</html> 

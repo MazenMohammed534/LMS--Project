@@ -1,0 +1,291 @@
+wwwroot\assests\images\courses\2cdaf989-5ba9-49e1-8771-df0d464510b8.jpg
+wwwroot\assests\images\courses\42bc4137-012f-4a17-a222-355f4ea98d02.jpg
+wwwroot\assests\images\courses\6ddf7c4f-8091-41a9-b0c1-7663d56a9602.jpg
+wwwroot\assests\images\courses\c88de1bd-b1b1-4165-a4d5-3be2b558c363.jpeg
+wwwroot\assests\images\courses\ccna.jpeg
+wwwroot\assests\images\courses\database.jpeg
+wwwroot\assests\images\courses\default-course-cover.jpg
+wwwroot\assests\images\courses\e04a4e31-293c-4a39-85a1-195c04a5a318.jpg
+wwwroot\assests\images\courses\webdev.jpeg
+wwwroot\css\AdminFile\AdminCourse\ViewCourse\ViewCourse.css
+wwwroot\css\AdminFile\AdminDashboard\Dashboard.css
+wwwroot\css\AdminFile\AdminDepartment\AddDepartment.css
+wwwroot\css\AdminFile\AdminDepartment\ViewDepartments.css
+wwwroot\css\AdminFile\AdminStudent\AddStudent\AddStudent.css
+wwwroot\css\AdminFile\AdminStudent\UpdateStudent\UpdateStudent.css
+wwwroot\css\AdminFile\AdminStudent\ViewStudent\ViewStudent.css
+wwwroot\css\AdminFile\AdminTeacher\AddTeacher\AddTeacher.css
+wwwroot\css\AdminFile\AdminTeacher\TeacherView\Teacher.css
+wwwroot\css\AdminFile\AdminTeacher\UpdateTeacher\UpdateTeacher.css
+wwwroot\css\AdminFile\Admin\AddAdmin\AddAdmin.css
+wwwroot\css\AdminFile\Admin\AdminView\Admin.css
+wwwroot\css\AdminFile\Admin\UpdateAdmin\UpdateAdmin.css
+wwwroot\css\AiAssistant\AiAssistant.css
+wwwroot\css\Assignment\Submit.css
+wwwroot\css\Button2\Button2.css
+wwwroot\css\Button\Button.css
+wwwroot\css\CourseAssignments\Assignments.css
+wwwroot\css\CourseMaterial\CourseMaterial.css
+wwwroot\css\CourseQuizzes\CourseQuizzes.css
+wwwroot\css\Discussion\Discussion.css
+wwwroot\css\Form\Form.css
+wwwroot\css\Images\Ballon d_Or.jpg
+wwwroot\css\Images\BOOKLOGO-Photoroom.png
+wwwroot\css\Images\BOOKLOGO.png
+wwwroot\css\Images\CAMPUSAI.png
+wwwroot\css\Images\CampusAii.png
+wwwroot\css\Images\Logo.jpg
+wwwroot\css\Images\profilephoto.jpg
+wwwroot\css\Images\Screenshot 2025-03-28 143411.png
+wwwroot\css\Images\WhatsApp Image 2025-03-13 at 23.58.52_85a0892f.jpg
+wwwroot\css\Images\WhatsApp Image 2025-03-13 at 23.58.52_8d6385b4.jpg
+wwwroot\css\Images\WhatsApp Image 2025-03-27 at 23.55.37_4cf19f39.jpg
+wwwroot\css\Images\WhatsApp Image 2025-04-30 at 01.07.19_2a05739a.jpg
+wwwroot\css\Images\WhatsApp Image 2025-04-30 at 01.07.19_99f11244.jpg
+wwwroot\css\Login&Register\login.css
+wwwroot\css\Login&Register\Register.css
+wwwroot\css\Menu\Menu&Two.css
+wwwroot\css\Quiz\ccnaquiz.css
+wwwroot\css\site.css
+wwwroot\css\StudentFile\Course\ArchivedCourse\ArchivedCourse.html
+wwwroot\css\StudentFile\Course\CourseMaterial\CourseMaterial.html
+wwwroot\css\StudentFile\Course\QuizzesCourse\answer.html
+wwwroot\css\StudentFile\Course\QuizzesCourse\ccnaquiz.css
+wwwroot\css\StudentFile\Course\QuizzesCourse\ccnaquiz.html
+wwwroot\css\StudentFile\Course\QuizzesCourse\endquiz.html
+wwwroot\css\StudentFile\Course\QuizzesCourse\lastQuestion.html
+wwwroot\css\StudentFile\Course\QuizzesCourse\LastviewQuestions.html
+wwwroot\css\StudentFile\Course\QuizzesCourse\Quizzes.html
+wwwroot\css\StudentFile\Course\QuizzesCourse\ViewQuestion.html
+wwwroot\css\StudentFile\Course\SubjectCourse\SubjectCourse.css
+wwwroot\css\StudentFile\Course\SubjectCourse\SubjectCourse.html
+wwwroot\css\StudentFile\Course\Tasks\submitTask.css
+wwwroot\css\StudentFile\Course\Tasks\submitTask.html
+wwwroot\css\StudentFile\Course\Tasks\Tasks.html
+wwwroot\css\StudentFile\Course\Tasks\ViewSubmissionTask.html
+wwwroot\css\StudentFile\Course\ViewCourse\Courses.css
+wwwroot\css\StudentFile\Dashboard\Dashboard.css
+wwwroot\css\Table2\Table2.css
+wwwroot\css\Table\Table.css
+wwwroot\css\TeacherFile\TeacherCourses\AddCourse\AddCourse.css
+wwwroot\css\TeacherFile\TeacherCourses\ArchivedCourses\Archived.css
+wwwroot\css\TeacherFile\TeacherCourses\CourseMaterial\CourseMaterial.css
+wwwroot\css\TeacherFile\TeacherCourses\CourseStudent\CourseStudent.css
+wwwroot\css\TeacherFile\TeacherCourses\Courses\Courses.css
+wwwroot\css\TeacherFile\TeacherCourses\SubjectCourse\SubjectCourse.css
+wwwroot\css\TeacherFile\TeacherCourses\UpdateCourse\UpdateCourse.css
+wwwroot\css\TeacherFile\TeacherCourses\UpdateMaterial\UpdateMaterial.css
+wwwroot\css\TeacherFile\TeacherCourses\UploadMaterial\UploadMaterial.css
+wwwroot\css\TeacherFile\TeacherDashboard\Dashboard.css
+wwwroot\css\TeacherFile\TeacherQuiz\AddQuestion\AddQuestion.html
+wwwroot\css\TeacherFile\TeacherQuiz\AddQuiz\AddQuiz.html
+wwwroot\css\TeacherFile\TeacherQuiz\EditQuiz\EditQuiz.html
+wwwroot\css\TeacherFile\TeacherQuiz\LastQuestion\LastQuestion.html
+wwwroot\css\TeacherFile\TeacherStudents\Students.css
+wwwroot\css\TeacherFile\TeacherTasks\AddTask\AddTask.html
+wwwroot\css\TeacherFile\TeacherTasks\EditTask\EditTask.html
+wwwroot\css\TeacherFile\TeacherTasks\TeacherTasksView.html\TeacherTaskView.html
+wwwroot\css\Text\Text.css
+wwwroot\favicon.ico
+wwwroot\js\site.js
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+wwwroot\lib\bootstrap\LICENSE
+wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
+wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
+wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+wwwroot\lib\jquery-validation\dist\additional-methods.js
+wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+wwwroot\lib\jquery-validation\LICENSE.md
+wwwroot\lib\jquery\dist\jquery.js
+wwwroot\lib\jquery\dist\jquery.min.js
+wwwroot\lib\jquery\dist\jquery.min.map
+wwwroot\lib\jquery\dist\jquery.slim.js
+wwwroot\lib\jquery\dist\jquery.slim.min.js
+wwwroot\lib\jquery\dist\jquery.slim.min.map
+wwwroot\lib\jquery\LICENSE.txt
+wwwroot\lib\microsoft\signalr\dist\browser\signalr.js
+wwwroot\lib\microsoft\signalr\dist\browser\signalr.min.js
+wwwroot\Materials\0aehbvyx.rk4
+wwwroot\Materials\10cozaav.4gs
+wwwroot\Materials\aacqtvum.d4q
+wwwroot\Materials\k0nefkke.mum
+wwwroot\Materials\tznm0qbx.52o
+wwwroot\Materials\ukv4f4jr.fy4
+wwwroot\Materials\xxyl3n4h.2ad
+wwwroot\Tasks\23885dd4-ac1e-429b-9ce4-620ae94bc6bb_MCQ_-CCNA1-23_Lect_3_(Network_Devices)[1].pdf
+wwwroot\Tasks\81c27581-5dd5-438e-a111-005fb5e3ed5a_MCQ_-CCNA1-23_Lect_3_(Network_Devices)[1].pdf
+wwwroot\Tasks\bbe3ee9c-28f3-4e2b-9815-e311c306ec48_MCQ_-CCNA1-23_Lect_3_(Network_Devices)[1].pdf
+D:\Project V2\wwwroot\css\AdminFile\AdminCourse\ViewCourse\ViewCourse.css
+D:\Project V2\wwwroot\css\AdminFile\AdminDashboard\Dashboard.css
+D:\Project V2\wwwroot\css\AdminFile\AdminDepartment\AddDepartment.css
+D:\Project V2\wwwroot\css\AdminFile\AdminDepartment\ViewDepartments.css
+D:\Project V2\wwwroot\css\AdminFile\AdminStudent\AddStudent\AddStudent.css
+D:\Project V2\wwwroot\css\AdminFile\AdminStudent\UpdateStudent\UpdateStudent.css
+D:\Project V2\wwwroot\css\AdminFile\AdminStudent\ViewStudent\ViewStudent.css
+D:\Project V2\wwwroot\css\AdminFile\AdminTeacher\AddTeacher\AddTeacher.css
+D:\Project V2\wwwroot\css\AdminFile\AdminTeacher\TeacherView\Teacher.css
+D:\Project V2\wwwroot\css\AdminFile\AdminTeacher\UpdateTeacher\UpdateTeacher.css
+D:\Project V2\wwwroot\css\AdminFile\Admin\AddAdmin\AddAdmin.css
+D:\Project V2\wwwroot\css\AdminFile\Admin\AdminView\Admin.css
+D:\Project V2\wwwroot\css\AdminFile\Admin\UpdateAdmin\UpdateAdmin.css
+D:\Project V2\wwwroot\css\Button2\Button2.css
+D:\Project V2\wwwroot\css\Button\Button.css
+D:\Project V2\wwwroot\css\CourseMaterial\CourseMaterial.css
+D:\Project V2\wwwroot\css\Form\Form.css
+D:\Project V2\wwwroot\css\Login&Register\login.css
+D:\Project V2\wwwroot\css\Login&Register\Register.css
+D:\Project V2\wwwroot\css\Menu\Menu&Two.css
+D:\Project V2\wwwroot\css\site.css
+D:\Project V2\wwwroot\css\StudentFile\Course\ArchivedCourse\ArchivedCourse.html
+D:\Project V2\wwwroot\css\StudentFile\Course\CourseMaterial\CourseMaterial.html
+D:\Project V2\wwwroot\css\StudentFile\Course\QuizzesCourse\answer.html
+D:\Project V2\wwwroot\css\StudentFile\Course\QuizzesCourse\ccnaquiz.css
+D:\Project V2\wwwroot\css\StudentFile\Course\QuizzesCourse\ccnaquiz.html
+D:\Project V2\wwwroot\css\StudentFile\Course\QuizzesCourse\endquiz.html
+D:\Project V2\wwwroot\css\StudentFile\Course\QuizzesCourse\lastQuestion.html
+D:\Project V2\wwwroot\css\StudentFile\Course\QuizzesCourse\LastviewQuestions.html
+D:\Project V2\wwwroot\css\StudentFile\Course\QuizzesCourse\Quizzes.html
+D:\Project V2\wwwroot\css\StudentFile\Course\QuizzesCourse\ViewQuestion.html
+D:\Project V2\wwwroot\css\StudentFile\Course\SubjectCourse\SubjectCourse.css
+D:\Project V2\wwwroot\css\StudentFile\Course\SubjectCourse\SubjectCourse.html
+D:\Project V2\wwwroot\css\StudentFile\Course\Tasks\submitTask.css
+D:\Project V2\wwwroot\css\StudentFile\Course\Tasks\submitTask.html
+D:\Project V2\wwwroot\css\StudentFile\Course\Tasks\Tasks.html
+D:\Project V2\wwwroot\css\StudentFile\Course\Tasks\ViewSubmissionTask.html
+D:\Project V2\wwwroot\css\StudentFile\Course\ViewCourse\Courses.css
+D:\Project V2\wwwroot\css\AiAssistant\AiAssistant.css
+D:\Project V2\wwwroot\css\Table2\Table2.css
+D:\Project V2\wwwroot\css\Table\Table.css
+D:\Project V2\wwwroot\css\TeacherFile\TeacherCourses\AddCourse\AddCourse.css
+D:\Project V2\wwwroot\css\TeacherFile\TeacherCourses\ArchivedCourses\Archived.css
+D:\Project V2\wwwroot\css\TeacherFile\TeacherCourses\CourseMaterial\CourseMaterial.css
+D:\Project V2\wwwroot\css\TeacherFile\TeacherCourses\CourseStudent\CourseStudent.css
+D:\Project V2\wwwroot\css\TeacherFile\TeacherCourses\Courses\Courses.css
+D:\Project V2\wwwroot\css\TeacherFile\TeacherCourses\SubjectCourse\SubjectCourse.css
+D:\Project V2\wwwroot\css\TeacherFile\TeacherCourses\UpdateCourse\UpdateCourse.css
+D:\Project V2\wwwroot\css\TeacherFile\TeacherCourses\UpdateMaterial\UpdateMaterial.css
+D:\Project V2\wwwroot\css\TeacherFile\TeacherCourses\UploadMaterial\UploadMaterial.css
+D:\Project V2\wwwroot\css\TeacherFile\TeacherDashboard\Dashboard.css
+D:\Project V2\wwwroot\css\TeacherFile\TeacherQuiz\AddQuestion\AddQuestion.html
+D:\Project V2\wwwroot\css\TeacherFile\TeacherQuiz\AddQuiz\AddQuiz.html
+D:\Project V2\wwwroot\css\TeacherFile\TeacherQuiz\EditQuiz\EditQuiz.html
+D:\Project V2\wwwroot\css\TeacherFile\TeacherQuiz\LastQuestion\LastQuestion.html
+D:\Project V2\wwwroot\css\TeacherFile\TeacherStudents\Students.css
+D:\Project V2\wwwroot\css\TeacherFile\TeacherTasks\AddTask\AddTask.html
+D:\Project V2\wwwroot\css\TeacherFile\TeacherTasks\EditTask\EditTask.html
+D:\Project V2\wwwroot\css\TeacherFile\TeacherTasks\TeacherTasksView.html\TeacherTaskView.html
+D:\Project V2\wwwroot\css\Text\Text.css
+D:\Project V2\wwwroot\favicon.ico
+D:\Project V2\wwwroot\js\site.js
+D:\Project V2\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+D:\Project V2\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+D:\Project V2\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+D:\Project V2\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+D:\Project V2\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+D:\Project V2\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+D:\Project V2\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+D:\Project V2\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+D:\Project V2\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+D:\Project V2\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+D:\Project V2\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+D:\Project V2\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+D:\Project V2\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+D:\Project V2\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+D:\Project V2\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+D:\Project V2\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+D:\Project V2\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+D:\Project V2\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+D:\Project V2\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+D:\Project V2\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+D:\Project V2\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+D:\Project V2\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+D:\Project V2\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+D:\Project V2\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+D:\Project V2\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+D:\Project V2\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+D:\Project V2\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+D:\Project V2\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+D:\Project V2\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+D:\Project V2\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+D:\Project V2\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+D:\Project V2\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+D:\Project V2\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+D:\Project V2\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+D:\Project V2\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+D:\Project V2\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+D:\Project V2\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+D:\Project V2\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+D:\Project V2\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+D:\Project V2\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+D:\Project V2\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+D:\Project V2\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+D:\Project V2\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+D:\Project V2\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+D:\Project V2\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
+D:\Project V2\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
+D:\Project V2\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+D:\Project V2\wwwroot\lib\jquery-validation\dist\additional-methods.js
+D:\Project V2\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+D:\Project V2\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+D:\Project V2\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+D:\Project V2\wwwroot\lib\jquery-validation\LICENSE.md
+D:\Project V2\wwwroot\lib\jquery\dist\jquery.js
+D:\Project V2\wwwroot\lib\jquery\dist\jquery.min.js
+D:\Project V2\wwwroot\lib\jquery\dist\jquery.min.map
+D:\Project V2\wwwroot\lib\jquery\dist\jquery.slim.js
+D:\Project V2\wwwroot\lib\jquery\dist\jquery.slim.min.js
+D:\Project V2\wwwroot\lib\jquery\dist\jquery.slim.min.map
+D:\Project V2\wwwroot\lib\jquery\LICENSE.txt
+D:\Project V2\wwwroot\css\CourseQuizzes\CourseQuizzes.css
+D:\Project V2\wwwroot\css\Quiz\ccnaquiz.css
+D:\Project V2\wwwroot\css\CourseAssignments\Assignments.css
+D:\Project V2\wwwroot\css\Assignment\Submit.css
+D:\Project V2\wwwroot\css\Discussion\Discussion.css
+D:\Project V2\wwwroot\lib\microsoft\signalr\dist\browser\signalr.js
+D:\Project V2\wwwroot\lib\microsoft\signalr\dist\browser\signalr.min.js
+D:\Project V2\wwwroot\css\StudentFile\Dashboard\Dashboard.css

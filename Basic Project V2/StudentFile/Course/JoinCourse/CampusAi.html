@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campus AI</title>
+    <link rel="stylesheet" href="../../../Menu/Menu&Two.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" />
+      <style>
+        :root {
+            --primary-color: #1b2233;
+            --secondary-color: #4281ed;
+            --bg-color: #ffffff;
+            --text-color: #1b2233;
+            --chat-bg: #f7f7f8;
+            --border-color: #e5e5e5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        .two {
+            background-color: var(--bg-color);
+            position: relative;
+        }
+
+        .nav {
+            justify-content: flex-end;
+            padding: 12px 24px;
+        }
+
+        .aiassistant a {
+            background-color: var(--secondary-color);
+        }
+
+        .chat-container {
+            height: calc(100vh - 60px);
+            display: flex;
+            flex-direction: column;
+            padding: 0 200px;
+        }
+
+        .chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px 0;
+        }
+
+        .message {
+            margin-bottom: 20px;
+            max-width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .message.user {
+            background-color: var(--chat-bg);
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 20px;
+        }
+
+        .message.ai {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .message-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 8px;
+        }
+
+        .message-header img {
+            width: 30px;
+            height: 30px;
+            border-radius: 4px;
+        }
+
+        .message-content {
+            color: var(--text-color);
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .code-block {
+            background-color: var(--chat-bg);
+            border-radius: 8px;
+            padding: 16px;
+            margin-top: 12px;
+            position: relative;
+        }
+
+        .code-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .code-title {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #1a7f37;
+        }
+
+        .code-actions {
+            display: flex;
+            gap: 12px;
+        }
+
+        .code-actions button {
+            background: none;
+            border: none;
+            color: var(--text-color);
+            opacity: 0.6;
+            cursor: pointer;
+        }
+
+        .code-actions button i {
+          color: #00173D;
+        }
+
+        .code-content {
+            background-color: #ffffff;
+            border-radius: 6px;
+            padding: 16px;
+            font-family: 'Fira Code', monospace;
+            font-size: 14px;
+            line-height: 1.5;
+            overflow-x: auto;
+            color: #00173D;
+        }
+
+        .chat-input {
+            padding: 20px 0;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .input-container {
+            display: flex;
+            align-items: center;
+            background-color: var(--chat-bg);
+            border-radius: 8px;
+            padding: 8px 16px;
+        }
+
+        .input-container input {
+            flex: 1;
+            border: none;
+            background: none;
+            padding: 12px;
+            color: var(--text-color);
+            font-size: 16px;
+            outline: none;
+        }
+
+        .input-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .input-actions button {
+            background: none;
+            border: none;
+            padding: 8px;
+            cursor: pointer;
+        }
+
+        .input-actions button i {
+            color: #00173D;
+        }
+
+        .input-actions button:hover {
+            color: var(--secondary-color);
+        }
+
+        .checkmark {
+            color: #1a7f37;
+            margin-right: 8px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="menu">
+        <ul>
+          <li class="image">
+            <div class="forimage">
+              <img src="../../../Images/BOOKLOGO-Photoroom.png" alt="" />
+              <p class="text">campus</p>
+            </div>
+          </li>
+          <div class="line"></div>
+          <li class="Dashboard">
+            <a href="../../Dashboard/Dashboard.html">
+              <i class="fa fa-address-card"></i>
+              <p>Dashboard</p></a
+            >
+          </li>
+          <li class="courses">
+            <a href="../ViewCourse/ViewCourse.html">
+              <i class="fa-solid fa-laptop-code"></i>
+              <p>courses</p></a
+            >
+          </li>
+          <li class="aiassistant">
+            <a href="../Ai Assistant/CampusAi.html">
+              <i class="fa-solid fa-laptop-code"></i>
+              <p>ai assistant</p></a
+            >
+          </li>
+          <div class="line bottom"></div>
+          <li class="personinfo">
+            <div class="personimg">
+              <img src="../../../Images/profilephoto.jpg" />
+            </div>
+            <div class="name">
+              <p>User Name</p>
+              <span>Teacher</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!--MENU -->
+      <div class="two">
+        <div class="main">
+          <div class="nav">
+            <div class="buttons">
+              <button>
+                  <i class="fa fa-sign-out"></i>
+              </button>
+              <button>
+                  <i class="fa-regular fa-bell"></i>
+              </button>
+              <button>
+                  <i class="fa-regular fa-message"></i>
+              </button>
+          </div>
+            <!--ICONS-->
+          </div>
+          <!--NAV-->
+          <div class="chat-container">
+            <div class="chat-messages">
+                <div class="message user">
+                    <div class="message-content">
+                        I want a simple program to sum two numbers using Java
+                    </div>
+                </div>
+                <div class="message ai">
+                    <div class="message-content">
+                        Got it! Here's the simplest Java program that just adds two numbers and prints the result.
+                    </div>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <div class="code-title">
+                                <i class="fas fa-check checkmark"></i>
+                                Simple Java Program to Add Two Numbers
+                            </div>
+                            <div class="code-actions">
+                                <button><i class="far fa-copy"></i> Copy</button>
+                            </div>
+                        </div>
+                        <pre class="code-content"><code class="language-java">import java.util.Scanner;
+
+public class SumTwoNumbers {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Input first number
+        System.out.print("Enter the first number: ");
+        int num1 = scanner.nextInt();
+
+        // Input second number
+        System.out.print("Enter the second number: ");
+        int num2 = scanner.nextInt();
+
+        // Calculate sum
+        int sum = num1 + num2;
+
+        // Display result
+        System.out.println("The sum is: " + sum);
+
+        scanner.close();
+    }
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input">
+                <div class="input-container">
+                    <input type="text" placeholder="What do you want to know?">
+                    <div class="input-actions">
+                        <button><i class="fas fa-paperclip"></i></button>
+                        <button><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MAIN -->
+      </div>
+      <!--TWO-->
+    </div>
+    <!--Container-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-java.min.js"></script>
+  </body>
+</html>
